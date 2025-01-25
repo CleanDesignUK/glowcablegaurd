@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Secure Your Glow Cable Guard Pre-Order" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Cable Guard | Pre-Order</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar white-bg">
+    <div class="nav-container">
+      <div class="logo">Glow Cable Guard</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="preorder.html" class="active">Pre-Order</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section 
+    class="hero hero-dark" 
+    style="background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ), url('https://via.placeholder.com/1500x400/000/fff?text=Pre-Order+Glow+Cable+Guard') center/cover no-repeat;"
+  >
+    <div class="hero-content">
+      <h1>Pre-Order Glow Cable Guard</h1>
+      <p>Secure your spot and enjoy our exclusive early-bird discount.</p>
+    </div>
+  </section>
+
+  <!-- PRE-ORDER INFO -->
+  <section class="white-bg content-section">
+    <div class="content-container">
+      <h2 class="section-title">Lock in Your Special Price</h2>
+      <p class="section-text">
+        For a limited time, get <strong>20% off</strong> the future retail price. 
+        Pay just <span class="highlight-price">£29.99</span> and be among the first to receive the Glow Cable Guard when it ships.
+      </p>
+
+      <div class="two-col-grid preorder-grid">
+        <!-- Placeholder product image or color selection UI -->
+        <div class="left-col">
+          <img 
+            src="https://via.placeholder.com/500x500/fff/000?text=Glow+Cable+Guard+Variant" 
+            alt="Glow Cable Guard variant" 
+            class="responsive-img product-img"
+          />
+        </div>
+        <!-- Payment & FAQ column -->
+        <div class="right-col">
+          <label for="colorSelect"><strong>Choose Color:</strong></label>
+          <select id="colorSelect" name="color">
+            <option value="Neon Green">Neon Green</option>
+            <option value="Solar Yellow">Solar Yellow</option>
+            <option value="Electric Blue">Electric Blue</option>
+          </select>
+
+          <div class="payment-section">
+            <p><strong>Ready to checkout?</strong></p>
+            <!-- Stripe Checkout Button -->
+            <button id="checkout-button" class="btn-glow">Pre-Order &amp; Pay</button>
+            <p class="small-text">100% secure checkout via Stripe</p>
+          </div>
+
+          <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <details>
+              <summary>When will I receive my Glow Cable Guard?</summary>
+              <p>We expect to start shipping in April 2025. You will receive updates via email.</p>
+            </details>
+            <details>
+              <summary>What payment methods are accepted?</summary>
+              <p>All major credit and debit cards via Stripe’s secure checkout.</p>
+            </details>
+            <details>
+              <summary>Can I cancel my pre-order?</summary>
+              <p>
+                Yes, you may request a full refund before your item ships.
+                Just email our support team.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="black-bg footer">
+    <div class="footer-container">
+      <p class="white-text">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Replace with your own Stripe Publishable Key
+    const stripe = Stripe("YOUR_STRIPE_PUBLIC_KEY");
+    document.getElementById("checkout-button").addEventListener("click", () => {
+      fetch("/create-checkout-session") 
+        .then(response => response.json())
+        .then(data => stripe.redirectToCheckout({ sessionId: data.sessionId }))
+        .catch((error) => console.error("Error:", error));
+    });
+  </script>
+</body>
+</html>

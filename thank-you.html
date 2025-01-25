@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Thank You Page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Cable Guard | Thank You</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar white-bg">
+    <div class="nav-container">
+      <div class="logo">Glow Cable Guard</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="preorder.html">Pre-Order</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- THANK YOU SECTION -->
+  <section class="white-bg content-section">
+    <div class="content-container">
+      <h1 class="section-title">Thank You!</h1>
+      <p class="section-text">
+        We’ve received your message or order. Check your email for a confirmation. 
+        We’ll be in touch soon!
+      </p>
+      <a href="index.html" class="btn-glow">Back to Home</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="black-bg footer">
+    <div class="footer-container">
+      <p class="white-text">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
