@@ -2,51 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Thank You Page" />
+  <meta name="description" content="Thank you for your pre-order of Glow Cable Guard!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glow Cable Guard | Thank You</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Thank You | Glow Cable Guard</title>
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="thank-you.css" />
+  
 </head>
 <body>
+  
   <!-- NAVBAR -->
-  <header class="navbar white-bg">
-    <div class="nav-container">
-      <div class="logo">Glow Cable Guard</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="preorder.html">Pre-Order</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">Glow Cable Guard</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div 
+        class="collapse navbar-collapse justify-content-end" 
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="preorder.html">Pre-Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
-
+  
   <!-- THANK YOU SECTION -->
-  <section class="white-bg content-section">
-    <div class="content-container">
-      <h1 class="section-title">Thank You!</h1>
-      <p class="section-text">
-        We’ve received your message or order. Check your email for a confirmation. 
-        We’ll be in touch soon!
-      </p>
-      <a href="index.html" class="btn-glow">Back to Home</a>
+  <section id="thank-you" class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img 
+            src="https://yourdomain.com/images/thank-you-icon.webp" 
+            alt="Thank You Icon" 
+            class="img-fluid mb-4" 
+            style="max-width: 150px;"
+          />
+          <h1 class="display-4 fw-bold">Thank You for Your Pre-Order!</h1>
+          <p class="lead my-4">
+            We're excited to have you on board. Your order has been successfully received.
+          </p>
+          <p class="mb-4">
+            You will receive an email confirmation shortly with your order details and tracking information once your Glow Cable Guard ships.
+          </p>
+          <a href="index.html" class="btn btn-success btn-lg">Return to Home</a>
+        </div>
+      </div>
     </div>
   </section>
-
+  
+  <!-- OPTIONAL: ADDITIONAL INFO SECTION -->
+  <section id="additional-info" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">What's Next?</h2>
+      <p class="section-text text-center mb-5">
+        Stay tuned for updates on your order. In the meantime, feel free to explore more about our products and how they can enhance your EV experience.
+      </p>
+      <div class="text-center">
+        <a href="features.html" class="btn btn-outline-success btn-lg me-3">Learn More</a>
+        <a href="contact.html" class="btn btn-outline-success btn-lg">Contact Support</a>
+      </div>
+    </div>
+  </section>
+  
   <!-- FOOTER -->
-  <footer class="black-bg footer">
-    <div class="footer-container">
-      <p class="white-text">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+        <a href="terms.html" class="text-white">Terms of Service</a>
+      </div>
     </div>
   </footer>
-
-  <!-- JS -->
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- Update Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  
 </body>
 </html>

@@ -1,0 +1,67 @@
+/* thank-you.css */
+
+/* THANK YOU SECTION */
+#thank-you {
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  #thank-you h1 {
+    font-size: 2.5rem;
+    color: #28a745; /* Green color to signify success */
+  }
+  
+  #thank-you p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  #thank-you .btn-success {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #thank-you .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* ADDITIONAL INFO SECTION */
+  #additional-info {
+    background-color: #ffffff;
+  }
+  
+  #additional-info h2 {
+    font-size: 2rem;
+    color: #28a745;
+  }
+  
+  #additional-info p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  #additional-info .btn-outline-success {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #additional-info .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+  }
+  
+  /* RESPONSIVE STYLING */
+  @media (max-width: 767.98px) {
+    #thank-you h1 {
+      font-size: 2rem;
+    }
+    #additional-info h2 {
+      font-size: 1.75rem;
+    }
+  }
+  

@@ -7,19 +7,21 @@
   <title>Glow Cable Guard | Pre-Order</title>
   
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-        crossorigin="anonymous">
-  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
-  
-  <!-- Custom Styles -->
+
+  <!-- Custom Styles (pre-order.css) -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="pre-order.css" />
 </head>
@@ -64,119 +66,137 @@
 
   <!-- HERO SECTION -->
   <section 
-    class="hero hero-dark d-flex align-items-center justify-content-center text-center text-white py-5" 
-    style="background: linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.6)
-    ), url('https://yourdomain.com/images/preorder-hero.webp') center/cover no-repeat;"
+    class="hero hero-dark d-flex align-items-center justify-content-center text-center text-white py-5 mt-5"
+    style="
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://yourdomain.com/images/preorder-hero.webp') center/cover no-repeat;
+    "
   >
     <div class="container">
       <h1 class="display-4 fw-bold">Pre-Order Glow Cable Guard</h1>
       <p class="lead my-4">Secure your spot and enjoy our exclusive early-bird discount.</p>
-      <a href="#preorder-info" class="btn btn-success btn-lg">Lock in Your Discount</a>
+      <!-- Direct link to Stripe Payment Link -->
+      <a href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" class="btn btn-success btn-lg">Pre-Order &amp; Pay Now</a>
+      <p class="mt-3 mb-0">
+        <strong>Hurry! Limited-time offer ends soon.</strong>
+      </p>
     </div>
   </section>
 
-  <!-- PRE-ORDER INFO -->
-  <section id="preorder-info" class="py-5 bg-light">
+  <!-- PRODUCT INFO -->
+  <section id="product-info" class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Lock in Your Special Price</h2>
+      <h2 class="section-title text-center mb-4">Why Glow Cable Guard?</h2>
       <p class="section-text text-center mb-5">
-        For a limited time, get <strong>20% off</strong> the future retail price. 
-        Pay just <span class="highlight-price">$29.99</span> and be among the first to receive the Glow Cable Guard when it ships.
+        Glow Cable Guard provides enhanced EV safety by preventing trips and falls with 
+        <strong>highly visible, durable</strong> cable management. Keep your family safe and your cables protected.
       </p>
-
-      <div class="row g-5">
-        <!-- Product Image -->
-        <div class="col-md-6 text-center">
+      <div class="row align-items-center">
+        <div class="col-md-6">
           <img 
-            src="https://yourdomain.com/images/preorder-product.webp" 
-            alt="Glow Cable Guard Variant" 
-            class="img-fluid rounded shadow-lg"
+            src="https://yourdomain.com/images/preorder-product.webp"
+            alt="Glow Cable Guard Variant"
+            class="img-fluid rounded shadow-lg product-img"
             loading="lazy"
           />
         </div>
-        
-        <!-- Pre-Order Form -->
         <div class="col-md-6">
-          <form id="preorder-form" class="needs-validation" novalidate>
-            <div class="mb-3">
-              <label for="colorSelect" class="form-label"><strong>Choose Color:</strong></label>
-              <select class="form-select" id="colorSelect" name="color" required>
-                <option value="" disabled selected>Select a color</option>
-                <option value="Neon Green">Neon Green</option>
-                <option value="Solar Yellow">Solar Yellow</option>
-                <option value="Electric Blue">Electric Blue</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a color option.
-              </div>
+          <ul class="list-group list-group-flush fs-5">
+            <li class="list-group-item">
+              <span class="fw-bold text-success">✔</span> Glow-in-the-dark visibility for safer walkways
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold text-success">✔</span> Weather-resistant to protect expensive cables
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold text-success">✔</span> Tool-free spiral design for easy installation
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold text-success">✔</span> Fits all standard EV cables
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR SHOWCASE CAROUSEL -->
+  <section id="colors" class="py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Pick Your Color</h2>
+      <p class="mb-5">Customize your Glow Cable Guard with a range of vibrant color options.</p>
+      
+      <div id="colorCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1: Neon Green -->
+          <div class="carousel-item active">
+            <img 
+              src="https://yourdomain.com/images/glow-cable-guard-green.webp"
+              class="d-block mx-auto rounded shadow"
+              alt="Neon Green Cable Guard"
+              style="max-width: 400px;"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Neon Green</h5>
+              <p>Bright, futuristic, and perfect for maximum visibility.</p>
             </div>
-
-            <div class="mb-3">
-              <label for="quantity" class="form-label"><strong>Quantity:</strong></label>
-              <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1" required>
-              <div class="invalid-feedback">
-                Please enter a valid quantity.
-              </div>
+          </div>
+          <!-- Slide 2: Solar Yellow -->
+          <div class="carousel-item">
+            <img 
+              src="https://yourdomain.com/images/glow-cable-guard-yellow.webp"
+              class="d-block mx-auto rounded shadow"
+              alt="Solar Yellow Cable Guard"
+              style="max-width: 400px;"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Solar Yellow</h5>
+              <p>Eye-catching hue that stands out any time of day or night.</p>
             </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label"><strong>Email Address:</strong></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
-              <div class="invalid-feedback">
-                Please enter a valid email address.
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-success btn-lg w-100">Pre-Order &amp; Pay</button>
-            <p class="small-text text-center mt-2">100% secure checkout via Stripe</p>
-          </form>
-
-          <!-- FAQ Section -->
-          <div class="faq-section mt-5">
-            <h3>Frequently Asked Questions</h3>
-            <div class="accordion" id="faqAccordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq1">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                    When will I receive my Glow Cable Guard?
-                  </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    We expect to start shipping in April 2025. You will receive updates via email.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    What payment methods are accepted?
-                  </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    All major credit and debit cards via Stripe’s secure checkout.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    Can I cancel my pre-order?
-                  </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Yes, you may request a full refund before your item ships. Just email our support team.
-                  </div>
-                </div>
-              </div>
+          </div>
+          <!-- Slide 3: Electric Blue -->
+          <div class="carousel-item">
+            <img 
+              src="https://yourdomain.com/images/glow-cable-guard-blue.webp"
+              class="d-block mx-auto rounded shadow"
+              alt="Electric Blue Cable Guard"
+              style="max-width: 400px;"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Electric Blue</h5>
+              <p>Sleek and modern—adds a stylish touch to any EV setup.</p>
             </div>
           </div>
         </div>
-      </div> <!-- End Row -->
+        <!-- Carousel Controls -->
+        <button 
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#colorCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button 
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#colorCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- CTA below carousel -->
+      <div class="mt-5">
+        <a 
+          href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
+          class="btn btn-success btn-lg px-5"
+        >
+          Pre-Order &amp; Pay Now
+        </a>
+      </div>
     </div>
   </section>
 
@@ -188,29 +208,69 @@
         <div class="carousel-inner">
           <!-- Testimonial 1 -->
           <div class="carousel-item active text-center">
-            <img src="https://yourdomain.com/images/user1.webp" alt="Customer 1" class="rounded-circle mb-3" width="100" height="100">
+            <img
+              src="https://yourdomain.com/images/user1.webp"
+              alt="Customer 1"
+              class="rounded-circle mb-3"
+              width="100"
+              height="100"
+            >
             <h5>Jane Doe</h5>
-            <p class="text-muted">"Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!"</p>
+            <p class="text-muted">
+              "Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!"
+            </p>
           </div>
           <!-- Testimonial 2 -->
           <div class="carousel-item text-center">
-            <img src="https://yourdomain.com/images/user2.webp" alt="Customer 2" class="rounded-circle mb-3" width="100" height="100">
+            <img
+              src="https://yourdomain.com/images/user2.webp"
+              alt="Customer 2"
+              class="rounded-circle mb-3"
+              width="100"
+              height="100"
+            >
             <h5>John Smith</h5>
-            <p class="text-muted">"A must-have for any EV owner. Easy to install and incredibly effective."</p>
+            <p class="text-muted">
+              "A must-have for any EV owner. Easy to install and incredibly effective."
+            </p>
           </div>
           <!-- Testimonial 3 -->
           <div class="carousel-item text-center">
-            <img src="https://yourdomain.com/images/user3.webp" alt="Customer 3" class="rounded-circle mb-3" width="100" height="100">
+            <img
+              src="https://yourdomain.com/images/user3.webp"
+              alt="Customer 3"
+              class="rounded-circle mb-3"
+              width="100"
+              height="100"
+            >
             <h5>Emily Johnson</h5>
-            <p class="text-muted">"No more tripping over cables in my driveway. Fantastic product!"</p>
+            <p class="text-muted">
+              "No more tripping over cables in my driveway. Fantastic product!"
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-success rounded-circle p-3"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-success rounded-circle p-3"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -221,87 +281,19 @@
   <footer class="bg-black text-white py-4">
     <div class="container text-center">
       <p class="mb-0">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
-      <div class="mt-2">
-        <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
-        <a href="terms.html" class="text-white">Terms of Service</a>
-      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-          crossorigin="anonymous">
-  </script>
-  
-  <!-- Stripe JS -->
-  <script src="https://js.stripe.com/v3/"></script>
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 
-  <!-- Custom JS -->
-  <script src="preorder.js"></script>
+  <!-- Update Year -->
   <script>
-    // Update current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Bootstrap form validation
-    (function () {
-      'use strict'
-      var forms = document.querySelectorAll('.needs-validation')
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })();
-
-    // Stripe Checkout Integration
-    const stripe = Stripe("YOUR_STRIPE_PUBLIC_KEY"); // Replace with your Stripe public key
-
-    document.getElementById("preorder-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      // Gather form data
-      const color = document.getElementById("colorSelect").value;
-      const quantity = document.getElementById("quantity").value;
-      const email = document.getElementById("email").value;
-
-      // Create a checkout session on the server
-      fetch("/create-checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          items: [
-            { 
-              id: "glow-cable-guard", 
-              color: color, 
-              quantity: quantity 
-            }
-          ],
-          email: email
-        })
-      })
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(session) {
-        return stripe.redirectToCheckout({ sessionId: session.id });
-      })
-      .then(function(result) {
-        if (result.error) {
-          alert(result.error.message);
-        }
-      })
-      .catch(function(error) {
-        console.error("Error:", error);
-      });
-    });
   </script>
 </body>
 </html>
