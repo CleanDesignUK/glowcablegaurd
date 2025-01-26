@@ -2,163 +2,302 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Glow Cable Guard – Pre-Order Now" />
+  <meta name="description" content="Glow Cable Guard – Enhance EV Safety with High-Visibility Cable Management. Pre-Order Now for Exclusive Discounts!" />
+  <meta name="keywords" content="EV cable management, electric vehicle safety, glow cable guard, prevent cable trips, EV accessories" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glow Cable Guard | Home</title>
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Fonts -->
+  <title>Glow Cable Guard | Enhance EV Safety</title>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Glow Cable Guard",
+    "image": [
+      "https://yourdomain.com/images/product1.webp",
+      "https://yourdomain.com/images/product2.webp"
+    ],
+    "description": "Glow Cable Guard enhances EV safety by making charging cables highly visible, preventing trips and falls.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Glow Cable Guard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://yourdomain.com/preorder.html",
+      "priceCurrency": "USD",
+      "price": "29.99",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+  </script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
   <!-- NAVBAR -->
-  <header class="navbar white-bg">
-    <div class="nav-container">
-      <div class="logo">Glow Cable Guard</div>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="features.html">Features</a>
-        <a href="preorder.html">Pre-Order</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="#">Glow Cable Guard</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div 
+        class="collapse navbar-collapse justify-content-end" 
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#preorder">Pre-Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <!-- HERO SECTION (dark background with partial gradient, placeholder hero image) -->
+  <!-- HERO SECTION -->
   <section 
-    class="hero hero-dark" 
-    style="background: linear-gradient(
-      rgba(0,0,0,0.7), 
-      rgba(0,0,0,0.7)
-    ), url('https://via.placeholder.com/1500x700/000/0f0?text=Glow+Cable+Guard+Hero+Image') center/cover no-repeat;"
+    id="home"
+    class="hero d-flex align-items-center text-center text-white py-5" 
+    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://yourdomain.com/images/hero-image.webp') center/cover no-repeat;"
   >
-    <div class="hero-content">
-      <h1>Light Up Your Driveway with Glow Cable Guard</h1>
-      <p>Pre-Order today and prevent dangerous EV cable trips while protecting your investment.</p>
-      <a href="preorder.html" class="btn-glow">Pre-Order Now</a>
+    <div class="container">
+      <h1 class="display-4 fw-bold">Light Up Your Driveway with Glow Cable Guard</h1>
+      <p class="lead my-4">Pre-Order today and prevent dangerous EV cable trips while protecting your investment.</p>
+      <a href="#preorder" class="btn btn-success btn-lg">Pre-Order Now</a>
     </div>
   </section>
 
-  <!-- PRODUCT OVERVIEW (white background) -->
-  <section class="white-bg content-section">
-    <div class="content-container">
-      <h2 class="section-title">Why Choose Glow Cable Guard?</h2>
-      <div class="two-col-grid">
-        <div class="left-col">
-          <p class="section-text">
+  <!-- PRODUCT OVERVIEW -->
+  <section id="features" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Why Choose Glow Cable Guard?</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="text-center text-md-start">
             Electric vehicle adoption is skyrocketing, but EV charging cables can become 
             <strong>serious tripping hazards—especially at night.</strong> Glow Cable Guard solves that problem by 
             making your cables highly visible, durable, and easy to manage.
           </p>
-          <ul class="benefits-list">
-            <li>Glow-in-the-dark visibility for safer walkways</li>
-            <li>Weather-resistant to protect expensive cables</li>
-            <li>Simple, tool-free spiral design</li>
-            <li>Fits all standard EV cables</li>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Glow-in-the-dark visibility for safer walkways</li>
+            <li class="list-group-item">Weather-resistant to protect expensive cables</li>
+            <li class="list-group-item">Simple, tool-free spiral design</li>
+            <li class="list-group-item">Fits all standard EV cables</li>
           </ul>
         </div>
-        <div class="right-col">
-          <!-- Placeholder product image -->
+        <div class="col-md-6 text-center">
           <img 
-            src="https://via.placeholder.com/600x400/fff/000?text=Glow+Cable+Guard+Product" 
+            src="https://yourdomain.com/images/product.webp" 
             alt="Glow Cable Guard product preview" 
-            class="responsive-img"
+            class="img-fluid rounded shadow" 
+            loading="lazy"
           />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STORIES (black background, with 4 quick "cards") -->
-  <section class="black-bg content-section">
-    <div class="content-container">
-      <h2 class="section-title white-text">Real Incidents That Demand a Solution</h2>
-      <p class="section-text white-text">
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">What Our Customers Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active text-center">
+            <img src="https://yourdomain.com/images/user1.webp" alt="Customer 1" class="rounded-circle mb-3" width="100" height="100">
+            <h5>Jane Doe</h5>
+            <p class="text-muted">"Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!"</p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item text-center">
+            <img src="https://yourdomain.com/images/user2.webp" alt="Customer 2" class="rounded-circle mb-3" width="100" height="100">
+            <h5>John Smith</h5>
+            <p class="text-muted">"A must-have for any EV owner. Easy to install and incredibly effective."</p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="carousel-item text-center">
+            <img src="https://yourdomain.com/images/user3.webp" alt="Customer 3" class="rounded-circle mb-3" width="100" height="100">
+            <h5>Emily Johnson</h5>
+            <p class="text-muted">"No more tripping over cables in my driveway. Fantastic product!"</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO DEMONSTRATION -->
+  <section id="video-demo" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">See Glow Cable Guard in Action</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/your-video-id" title="Glow Cable Guard Demo Video" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section id="stories" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Real Incidents That Demand a Solution</h2>
+      <p class="text-center mb-5">
         See why cable safety is an urgent matter for EV owners, drawn from real cases and community reports.
       </p>
-      <div class="stories-grid">
+      <div class="row g-4">
         <!-- Story 1 -->
-        <div class="story-card">
-          <img 
-            src="https://via.placeholder.com/300x200/333/fff?text=Legal+Case" 
-            alt="Legal case"
-            class="story-img"
-          />
-          <h3>Legal Implications (2021)</h3>
-          <p>
-            A personal injury law firm reported a lawsuit after someone tripped over a poorly lit EV cable. 
-            Owners risk negligence claims if they fail to ensure safety.
-          </p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-secondary text-white h-100">
+            <img 
+              src="https://yourdomain.com/images/legal-case.webp" 
+              class="card-img-top" 
+              alt="Legal case"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Legal Implications (2021)</h5>
+              <p class="card-text">
+                A personal injury law firm reported a lawsuit after someone tripped over a poorly lit EV cable. 
+                Owners risk negligence claims if they fail to ensure safety.
+              </p>
+            </div>
+          </div>
         </div>
         <!-- Story 2 -->
-        <div class="story-card">
-          <img 
-            src="https://via.placeholder.com/300x200/444/fff?text=Community+Forum" 
-            alt="Community concern"
-            class="story-img"
-          />
-          <h3>Community Concerns (2021)</h3>
-          <p>
-            Forum users shared near-miss experiences in garages. They emphasized 
-            better visibility solutions to avoid accidents in residential settings.
-          </p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-secondary text-white h-100">
+            <img 
+              src="https://yourdomain.com/images/community-forum.webp" 
+              class="card-img-top" 
+              alt="Community concern"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Community Concerns (2021)</h5>
+              <p class="card-text">
+                Forum users shared near-miss experiences in garages. They emphasized 
+                better visibility solutions to avoid accidents in residential settings.
+              </p>
+            </div>
+          </div>
         </div>
         <!-- Story 3 -->
-        <div class="story-card">
-          <img 
-            src="https://via.placeholder.com/300x200/555/fff?text=Public+Space" 
-            alt="Public trip hazard"
-            class="story-img"
-          />
-          <h3>Trip Hazards in Public (2022)</h3>
-          <p>
-            Residents reported cables crossing sidewalks at night, leading to 
-            frequent complaints about potential falls and exposed wiring.
-          </p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-secondary text-white h-100">
+            <img 
+              src="https://yourdomain.com/images/public-space.webp" 
+              class="card-img-top" 
+              alt="Public trip hazard"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Trip Hazards in Public (2022)</h5>
+              <p class="card-text">
+                Residents reported cables crossing sidewalks at night, leading to 
+                frequent complaints about potential falls and exposed wiring.
+              </p>
+            </div>
+          </div>
         </div>
         <!-- Story 4 -->
-        <div class="story-card">
-          <img 
-            src="https://via.placeholder.com/300x200/666/fff?text=Insurance+Risks" 
-            alt="Insurance concerns"
-            class="story-img"
-          />
-          <h3>Insurance Risks (2024)</h3>
-          <p>
-            Insurance Edge highlighted how EV owners could face prosecution 
-            or liability claims if someone is injured by a charging cable.
-          </p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-secondary text-white h-100">
+            <img 
+              src="https://yourdomain.com/images/insurance-risks.webp" 
+              class="card-img-top" 
+              alt="Insurance concerns"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Insurance Risks (2024)</h5>
+              <p class="card-text">
+                Insurance Edge highlighted how EV owners could face prosecution 
+                or liability claims if someone is injured by a charging cable.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- CTA to read more stories on Features page -->
-      <a href="features.html" class="btn-dark-outline">Explore More Cases</a>
+      <!-- CTA -->
+      <div class="text-center mt-5">
+        <a href="#preorder" class="btn btn-outline-success btn-lg">Explore More Cases</a>
+      </div>
     </div>
   </section>
 
-  <!-- CTA: white background -->
-  <section class="white-bg cta-section">
-    <div class="content-container">
-      <h2 class="section-title">Protect Your Family & Your Investment</h2>
-      <p class="section-text">
+  <!-- CTA SECTION -->
+  <section id="preorder" class="py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Protect Your Family & Your Investment</h2>
+      <p class="lead mb-4">
         Don’t wait until an accident happens. Order your Glow Cable Guard now for peace of mind.
       </p>
-      <a href="preorder.html" class="btn-glow">Secure My Early-Bird Discount</a>
+      <a href="preorder.html" class="btn btn-success btn-lg">Secure My Early-Bird Discount</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="black-bg footer">
-    <div class="footer-container">
-      <p class="white-text">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- JS -->
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!-- Smooth Scrolling and Dynamic Year -->
   <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    
+    // Update current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
