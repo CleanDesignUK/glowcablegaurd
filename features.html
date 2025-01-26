@@ -5,177 +5,310 @@
   <meta name="description" content="Glow Cable Guard Features" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Glow Cable Guard | Features</title>
-  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="features.css" />
 </head>
 <body>
+
   <!-- NAVBAR -->
-  <header class="navbar white-bg">
-    <div class="nav-container">
-      <div class="logo">Glow Cable Guard</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="features.html" class="active">Features</a>
-        <a href="preorder.html">Pre-Order</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">Glow Cable Guard</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div 
+        class="collapse navbar-collapse justify-content-end" 
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="preorder.html">Pre-Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <!-- HERO SECTION -->
   <section 
-    class="hero hero-dark" 
+    class="hero hero-dark d-flex align-items-center justify-content-center text-center text-white py-5" 
     style="background: linear-gradient(
       rgba(0,0,0,0.6), 
       rgba(0,0,0,0.6)
-    ), url('https://via.placeholder.com/1500x500/000/fff?text=Glow+Cable+Guard+Features') center/cover no-repeat;"
+    ), url('https://yourdomain.com/images/features-hero.webp') center/cover no-repeat;"
   >
-    <div class="hero-content">
-      <h1>Designed for Safety, Built for Durability</h1>
-      <p>Dive deeper into how Glow Cable Guard safeguards your EV charging routine.</p>
+    <div class="container">
+      <h1 class="display-4 fw-bold">Designed for Safety, Built for Durability</h1>
+      <p class="lead my-4">Dive deeper into how Glow Cable Guard safeguards your EV charging routine.</p>
     </div>
   </section>
 
-  <!-- FEATURES SECTION (white) -->
+  <!-- KEY FEATURES SECTION -->
   <section class="white-bg content-section">
-    <div class="content-container">
+    <div class="container">
       <h2 class="section-title">Key Features</h2>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <img 
-            src="https://via.placeholder.com/400x300/eee/000?text=Glow+Tech" 
-            alt="Glow technology" 
-            class="feature-img"
-          />
-          <h3>Glow-in-the-Dark Tech</h3>
-          <p>
-            Photoluminescent materials absorb light and glow brightly after dark, 
-            ensuring your cable is seen at night.
-          </p>
+      <div class="row ">
+        <!-- Feature 1 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card feature-item h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/features/glow-tech.webp" 
+              alt="Glow-in-the-Dark Technology" 
+              class="card-img-top feature-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Glow-in-the-Dark Tech</h3>
+              <p class="card-text">
+                Photoluminescent materials absorb light and glow brightly after dark, 
+                ensuring your cable is seen at night.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature-item">
-          <img 
-            src="https://via.placeholder.com/400x300/ddd/000?text=Spiral+Design" 
-            alt="Spiral design" 
-            class="feature-img"
-          />
-          <h3>Spiral Wrap Design</h3>
-          <p>
-            A flexible coil that wraps around cables of various diameters, 
-            protecting and bundling them for neat storage.
-          </p>
+        <!-- Feature 2 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card feature-item h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/features/spiral-design.webp" 
+              alt="Spiral Wrap Design" 
+              class="card-img-top feature-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Spiral Wrap Design</h3>
+              <p class="card-text">
+                A flexible coil that wraps around cables of various diameters, 
+                protecting and bundling them for neat storage.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature-item">
-          <img 
-            src="https://via.placeholder.com/400x300/ccc/000?text=Weather+Resistant" 
-            alt="Weather resistant" 
-            class="feature-img"
-          />
-          <h3>All-Weather Resistant</h3>
-          <p>
-            UV, rain, or snow—Glow Cable Guard is built to handle 
-            tough outdoor conditions year-round.
-          </p>
+        <!-- Feature 3 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card feature-item h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/features/weather-resistant.webp" 
+              alt="All-Weather Resistant" 
+              class="card-img-top feature-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">All-Weather Resistant</h3>
+              <p class="card-text">
+                UV, rain, or snow—Glow Cable Guard is built to handle 
+                tough outdoor conditions year-round.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="feature-item">
-          <img 
-            src="https://via.placeholder.com/400x300/bbb/000?text=Easy+Install" 
-            alt="Easy install" 
-            class="feature-img"
-          />
-          <h3>Tool-Free Installation</h3>
-          <p>
-            Simply wrap and go. No special tools required, meaning 
-            anyone can secure their EV cables quickly.
-          </p>
+        <!-- Feature 4 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card feature-item h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/features/easy-install.webp" 
+              alt="Tool-Free Installation" 
+              class="card-img-top feature-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Tool-Free Installation</h3>
+              <p class="card-text">
+                Simply wrap and go. No special tools required, meaning 
+                anyone can secure their EV cables quickly.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXTENDED STORIES (black) -->
+  <!-- EXTENDED STORIES SECTION -->
   <section class="black-bg content-section">
-    <div class="content-container">
+    <div class="container">
       <h2 class="section-title white-text">Real-Life Incidents & Near Misses</h2>
-      <p class="section-text white-text">
+      <p class="section-text white-text text-center mb-5">
         Hear more accounts of why an illuminated, protective cable solution is essential.
       </p>
-      <div class="stories-grid">
-        <div class="story-card white-bg">
-          <img 
-            src="https://via.placeholder.com/300x200/999/fff?text=Australia" 
-            alt="Australia trip hazard" 
-            class="story-img"
-          />
-          <h3>Public Safety in Sawtell (2023)</h3>
-          <p>
-            A resident running an EV cable across a public footpath caused outrage 
-            due to the clear trip hazard—particularly at night.
-          </p>
+      <div class="row ">
+        <!-- Story 1 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card story-card h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/stories/australia-trip-hazard.webp" 
+              alt="Public Safety in Sawtell (2023)" 
+              class="card-img-top story-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Public Safety in Sawtell (2023)</h3>
+              <p class="card-text">
+                A resident running an EV cable across a public footpath caused outrage 
+                due to the clear trip hazard—particularly at night.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="story-card white-bg">
-          <img 
-            src="https://via.placeholder.com/300x200/888/fff?text=San+Francisco" 
-            alt="San Francisco concerns" 
-            class="story-img"
-          />
-          <h3>Liability in San Francisco (2023)</h3>
-          <p>
-            Reddit users debated the legal responsibilities of EV owners 
-            when cables spanned public sidewalks without adequate lighting.
-          </p>
+        <!-- Story 2 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card story-card h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/stories/san-francisco-liability.webp" 
+              alt="Liability in San Francisco (2023)" 
+              class="card-img-top story-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Liability in San Francisco (2023)</h3>
+              <p class="card-text">
+                Reddit users debated the legal responsibilities of EV owners 
+                when cables spanned public sidewalks without adequate lighting.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="story-card white-bg">
-          <img 
-            src="https://via.placeholder.com/300x200/777/fff?text=Disability+Groups" 
-            alt="Disability concerns" 
-            class="story-img"
-          />
-          <h3>Disability Advocates (2021)</h3>
-          <p>
-            A disability group in Camden highlighted how cables blocking 
-            sidewalks greatly impact those with mobility aids.
-          </p>
+        <!-- Story 3 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card story-card h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/stories/disability-advocates.webp" 
+              alt="Disability Advocates (2021)" 
+              class="card-img-top story-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Disability Advocates (2021)</h3>
+              <p class="card-text">
+                A disability group in Camden highlighted how cables blocking 
+                sidewalks greatly impact those with mobility aids.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="story-card white-bg">
-          <img 
-            src="https://via.placeholder.com/300x200/666/fff?text=Workplace+Alerts" 
-            alt="Workplace safety" 
-            class="story-img"
-          />
-          <h3>Workplace Safety Alerts (2023)</h3>
-          <p>
-            Corporate parking lots faced legal challenges when employees 
-            tripped over charging cables—leading to HR and liability issues.
-          </p>
+        <!-- Story 4 -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card story-card h-100 text-center">
+            <img 
+              src="https://yourdomain.com/images/stories/workplace-safety.webp" 
+              alt="Workplace Safety Alerts (2023)" 
+              class="card-img-top story-img"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Workplace Safety Alerts (2023)</h3>
+              <p class="card-text">
+                Corporate parking lots faced legal challenges when employees 
+                tripped over charging cables—leading to HR and liability issues.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="white-bg cta-section">
-    <div class="content-container">
-      <h2 class="section-title">Ready to Make Your EV Charging Setup Safer?</h2>
-      <p class="section-text">
+  <!-- CTA SECTION -->
+  <section class="white-bg cta-section text-center py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Ready to Make Your EV Charging Setup Safer?</h2>
+      <p class="section-text mb-4">
         Pre-Order your Glow Cable Guard today and enjoy peace of mind with every charge.
       </p>
       <a href="preorder.html" class="btn-glow">Pre-Order Now</a>
     </div>
   </section>
 
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">What Our Customers Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active text-center">
+            <img src="https://yourdomain.com/images/user1.webp" alt="Customer 1" class="rounded-circle mb-3" width="100" height="100">
+            <h5>Jane Doe</h5>
+            <p class="text-muted">"Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!"</p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item text-center">
+            <img src="https://yourdomain.com/images/user2.webp" alt="Customer 2" class="rounded-circle mb-3" width="100" height="100">
+            <h5>John Smith</h5>
+            <p class="text-muted">"A must-have for any EV owner. Easy to install and incredibly effective."</p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="carousel-item text-center">
+            <img src="https://yourdomain.com/images/user3.webp" alt="Customer 3" class="rounded-circle mb-3" width="100" height="100">
+            <h5>Emily Johnson</h5>
+            <p class="text-muted">"No more tripping over cables in my driveway. Fantastic product!"</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="black-bg footer">
-    <div class="footer-container">
-      <p class="white-text">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+        <a href="terms.html" class="text-white">Terms of Service</a>
+      </div>
     </div>
   </footer>
 
-  <!-- JS -->
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous">
+  </script>
+  
+  <!-- Custom JS -->
   <script>
+    // Update current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>

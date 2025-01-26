@@ -1,0 +1,128 @@
+/* pre-order.css */
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .section-text {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .highlight-price {
+    color: #28a745;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn-glow {
+    background-color: #28a745;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-glow:hover {
+    background-color: #218838;
+  }
+  
+  .faq-section h3 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero-dark {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-dark .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .hero-dark .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Pre-Order Form */
+  #preorder-form {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #preorder-form .form-label {
+    font-weight: 600;
+  }
+  
+  #preorder-form .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  #preorder-form .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .small-text {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Product Image */
+  .product-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials */
+  #testimonials .carousel-item {
+    padding: 2rem;
+  }
+  
+  #testimonials img {
+    border: 3px solid #28a745;
+  }
+  
+  /* Footer */
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .hero-dark .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-dark .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
