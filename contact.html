@@ -82,81 +82,82 @@
         <!-- Contact Form -->
         <div class="col-12 col-md-8 mb-4">
           <form 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  data-netlify-honeypot="bot-field" 
-  id="contact-form"
-  class="contact-form needs-validation" 
-  novalidate
->
-  <!-- Hidden inputs for Netlify -->
-  <input type="hidden" name="form-name" value="contact" />
-  <input type="hidden" name="bot-field" />
-
-  <!-- Form Fields -->
-  <div class="mb-3">
-    <label for="name" class="form-label"><strong>Name</strong></label>
-    <input 
-      type="text" 
-      class="form-control" 
-      id="name" 
-      name="name" 
-      placeholder="Your Name" 
-      required
-    />
-    <div class="invalid-feedback">
-      Please enter your name.
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label for="email" class="form-label"><strong>Email</strong></label>
-    <input 
-      type="email" 
-      class="form-control" 
-      id="email" 
-      name="email" 
-      placeholder="your.email@example.com" 
-      required
-    />
-    <div class="invalid-feedback">
-      Please enter a valid email address.
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label for="subject" class="form-label"><strong>Subject</strong></label>
-    <input 
-      type="text" 
-      class="form-control" 
-      id="subject" 
-      name="subject" 
-      placeholder="Subject" 
-      required
-    />
-    <div class="invalid-feedback">
-      Please enter a subject.
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label for="message" class="form-label"><strong>Message</strong></label>
-    <textarea 
-      class="form-control" 
-      id="message" 
-      name="message" 
-      rows="5" 
-      placeholder="How can we help?" 
-      required
-    ></textarea>
-    <div class="invalid-feedback">
-      Please enter your message.
-    </div>
-  </div>
-
-  <button type="submit" class="btn btn-glow">Send Message</button>
-</form>
+          name="contact" 
+          method="POST" 
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field" 
+          id="contact-form"
+          class="contact-form needs-validation" 
+          novalidate
+          netlify
+        >
+          <!-- Hidden inputs for Netlify -->
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
+        
+          <!-- Form Fields -->
+          <div class="mb-3">
+            <label for="name" class="form-label"><strong>Name</strong></label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              name="name" 
+              placeholder="Your Name" 
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="email" class="form-label"><strong>Email</strong></label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              name="email" 
+              placeholder="your.email@example.com" 
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="subject" class="form-label"><strong>Subject</strong></label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="subject" 
+              name="subject" 
+              placeholder="Subject" 
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a subject.
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="message" class="form-label"><strong>Message</strong></label>
+            <textarea 
+              class="form-control" 
+              id="message" 
+              name="message" 
+              rows="5" 
+              placeholder="How can we help?" 
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Please enter your message.
+            </div>
+          </div>
+        
+          <button type="submit" class="btn btn-glow">Send Message</button>
+        </form>
         </div>
         
         <!-- Contact Details -->
@@ -195,7 +196,6 @@
           crossorigin="anonymous">
   </script>
   
-  <!-- Custom JS for Form Validation -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('contact-form');
@@ -232,5 +232,6 @@
       });
     });
   </script>
+  
 </body>
 </html>
