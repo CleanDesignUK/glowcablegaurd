@@ -45,6 +45,16 @@
   
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Inline CSS for Square Images -->
+  <style>
+    /* Force images with the "square" class to maintain a 1:1 aspect ratio */
+    .square {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
 
@@ -89,7 +99,7 @@
   <section 
     id="home"
     class="hero d-flex align-items-center text-center text-white py-5" 
-    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://yourdomain.com/images/hero-image.webp') center/cover no-repeat;"
+    style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg') center/cover no-repeat;"
   >
     <div class="container">
       <h1 class="display-4 fw-bold">Light Up Your Driveway with Glow Cable Guard</h1>
@@ -104,21 +114,24 @@
       <h2 class="section-title text-center mb-5">Why Choose Glow Cable Guard?</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <p class="text-center text-md-start">
-            Electric vehicle adoption is skyrocketing, but EV charging cables can become 
-            <strong>serious tripping hazards—especially at night.</strong> Glow Cable Guard solves that problem by 
-            making your cables highly visible, durable, and easy to manage.
-          </p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Glow-in-the-dark visibility for safer walkways</li>
-            <li class="list-group-item">Weather-resistant to protect expensive cables</li>
-            <li class="list-group-item">Simple, tool-free spiral design</li>
-            <li class="list-group-item">Fits all standard EV cables</li>
-          </ul>
+          <!-- New wrapper for smaller text and rounded corners -->
+          <div class="features-text-box p-3">
+            <p class="text-center text-md-start small-text">
+              Electric vehicle adoption is skyrocketing, but EV charging cables can become 
+              <strong>serious tripping hazards—especially at night.</strong> Glow Cable Guard solves that problem by 
+              making your cables highly visible, durable, and easy to manage.
+            </p>
+            <ul class="list-group list-group-flush small-text">
+              <li class="list-group-item">Glow-in-the-dark visibility for safer walkways</li>
+              <li class="list-group-item">Weather-resistant to protect expensive cables</li>
+              <li class="list-group-item">Simple, tool-free spiral design</li>
+              <li class="list-group-item">Fits all standard EV cables</li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-6 text-center">
           <img 
-            src="https://yourdomain.com/images/product.webp" 
+            src="glow-cable-guard-product-preview.jpg" 
             alt="Glow Cable Guard product preview" 
             class="img-fluid rounded shadow" 
             loading="lazy"
@@ -167,14 +180,22 @@
 
   <!-- VIDEO DEMONSTRATION -->
   <section id="video-demo" class="py-5 bg-white">
-    <div class="container">
-      <h2 class="section-title text-center mb-5">See Glow Cable Guard in Action</h2>
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/your-video-id" title="Glow Cable Guard Demo Video" allowfullscreen loading="lazy"></iframe>
+    <div class="container text-center">
+      <h2 class="section-title text-center mb-4">See Glow Cable Guard in Action</h2>
+      <div class="d-flex justify-content-center">
+        <div style="width: 320px; height: 560px; max-width: 100%;">
+          <iframe
+            src="https://www.youtube.com/embed/gu-UWNUlRGU?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1"
+            title="Glow Cable Guard Demo Video"
+            allow="autoplay; encrypted-media"
+            loading="lazy"
+            style="width: 100%; height: 100%; border: none;"
+          ></iframe>
+        </div>
       </div>
     </div>
   </section>
-
+  
   <!-- STORIES -->
   <section id="stories" class="py-5 bg-dark text-white">
     <div class="container">
@@ -187,7 +208,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-secondary text-white h-100">
             <img 
-              src="https://yourdomain.com/images/legal-case.webp" 
+              src="legal-case.jpg" 
               class="card-img-top" 
               alt="Legal case"
               loading="lazy"
@@ -205,7 +226,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-secondary text-white h-100">
             <img 
-              src="https://yourdomain.com/images/community-forum.webp" 
+              src="community-concern.jpg" 
               class="card-img-top" 
               alt="Community concern"
               loading="lazy"
@@ -223,8 +244,8 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-secondary text-white h-100">
             <img 
-              src="https://yourdomain.com/images/public-space.webp" 
-              class="card-img-top" 
+              src="tripping-hazard.jpg" 
+              class="card-img-top square" 
               alt="Public trip hazard"
               loading="lazy"
             />
@@ -241,7 +262,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card bg-secondary text-white h-100">
             <img 
-              src="https://yourdomain.com/images/insurance-risks.webp" 
+              src="insurance-concerns.jpg" 
               class="card-img-top" 
               alt="Insurance concerns"
               loading="lazy"
