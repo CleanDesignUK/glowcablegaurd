@@ -43,21 +43,114 @@
     rel="stylesheet"
   />
   
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css" />
-  
-  <!-- Inline CSS for Square Images -->
+  <!-- Internal CSS -->
   <style>
-    /* Force images with the "square" class to maintain a 1:1 aspect ratio */
+    /* General Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    
+    .section-text {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    
+    .highlight-price {
+      color: #28a745;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .btn-glow {
+      background-color: #28a745;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      color: #fff;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn-glow:hover {
+      background-color: #218838;
+    }
+    
+    /* Hero Section */
+    #home{
+      
+      min-height: 80vh;  /* Adjusted for a larger hero image */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    .hero-dark h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    
+    .hero-dark p {
+      font-size: 1.2rem;
+    }
+    
+    /* Product Image */
+    .product-img {
+      border: 2px solid #28a745;
+      border-radius: 10px;
+    }
+    
+    /* New styling for smaller product preview image */
+    .small-product-img {
+      max-width: 500px;  /* Smaller than default img-fluid */
+      border-radius: 15px;  /* More pronounced rounding */
+    }
+    
+    /* Carousel Captions - Moved below the image */
+    .carousel-caption {
+      position: static !important;
+      padding-top: 1rem;
+      color: #000;
+      text-align: center;
+    }
+    
+    /* Testimonials */
+    #testimonials .carousel-item {
+      padding: 2rem;
+    }
+    
+    #testimonials img {
+      border: 3px solid #28a745;
+    }
+    
+    /* Internal helper for square images */
     .square {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
     }
+    
+    /* Responsive Styles */
+    @media (max-width: 767.98px) {
+      .section-title {
+        font-size: 2rem;
+      }
+      .hero-dark h1 {
+        font-size: 2rem;
+      }
+      .hero-dark p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
-
   <!-- NAVBAR -->
   <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
     <div class="container">
@@ -73,10 +166,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div 
-        class="collapse navbar-collapse justify-content-end" 
-        id="navbarNav"
-      >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" href="#home">Home</a>
@@ -114,26 +204,23 @@
       <h2 class="section-title text-center mb-5">Why Choose Glow Cable Guard?</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <!-- New wrapper for smaller text and rounded corners -->
-          <div class="features-text-box p-3">
-            <p class="text-center text-md-start small-text">
-              Electric vehicle adoption is skyrocketing, but EV charging cables can become 
-              <strong>serious tripping hazards—especially at night.</strong> Glow Cable Guard solves that problem by 
-              making your cables highly visible, durable, and easy to manage.
-            </p>
-            <ul class="list-group list-group-flush small-text">
-              <li class="list-group-item">Glow-in-the-dark visibility for safer walkways</li>
-              <li class="list-group-item">Weather-resistant to protect expensive cables</li>
-              <li class="list-group-item">Simple, tool-free spiral design</li>
-              <li class="list-group-item">Fits all standard EV cables</li>
-            </ul>
-          </div>
+          <p class="text-center text-md-start">
+            Electric vehicle adoption is skyrocketing, but EV charging cables can become 
+            <strong>serious tripping hazards—especially at night.</strong> Glow Cable Guard solves that problem by 
+            making your cables highly visible, durable, and easy to manage.
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Glow-in-the-dark visibility for safer walkways</li>
+            <li class="list-group-item">Weather-resistant to protect expensive cables</li>
+            <li class="list-group-item">Simple, tool-free spiral design</li>
+            <li class="list-group-item">Fits all standard EV cables</li>
+          </ul>
         </div>
         <div class="col-md-6 text-center">
           <img 
             src="glow-cable-guard-product-preview.jpg" 
             alt="Glow Cable Guard product preview" 
-            class="img-fluid rounded shadow" 
+            class="img-fluid small-product-img shadow" 
             loading="lazy"
           />
         </div>
@@ -303,7 +390,10 @@
   </footer>
 
   <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous">
+  </script>
   
   <!-- Smooth Scrolling and Dynamic Year -->
   <script>

@@ -1,98 +1,95 @@
-/* contact.css */
-
 /* Button Glow Styling */
 .btn-glow {
-    background-color: #28a745;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    color: #fff;
-    font-size: 1.1rem;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .btn-glow:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-  }
-  
-  /* Contact Details Styling */
-  .contact-details h3 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-details p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .contact-details a {
-    color: #28a745;
-    text-decoration: none;
-  }
-  
-  .contact-details a:hover {
-    color: #218838;
-    text-decoration: underline;
-  }
-  
-  /* Social Media Icons */
-  .contact-details img {
-    transition: transform 0.3s ease;
-  }
-  
-  .contact-details img:hover {
-    transform: scale(1.2);
-  }
-  
-  /* Form Styling */
-  .contact-form {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form .form-label {
-    font-weight: 600;
-  }
-  
-  .contact-form .form-control {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s ease;
-  }
-  
-  .contact-form .form-control:focus {
-    border-color: #28a745;
-    box-shadow: none;
-  }
-  
-  /* Hero Section Text */
+  background-color: #28a745;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-glow:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Contact Details Styling */
+.contact-details h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-details a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+/* Social Media Icons (Bootstrap Icons already handle sizing, but we add a hover scale) */
+.contact-details i {
+  transition: transform 0.3s ease;
+}
+
+.contact-details i:hover {
+  transform: scale(1.2);
+}
+
+/* Form Styling */
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #28a745;
+  box-shadow: none;
+}
+
+/* Hero Section Text */
+.hero-dark .hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-dark .hero-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
   .hero-dark .hero-content h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
   }
   
   .hero-dark .hero-content p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
-  /* Responsive Adjustments */
-  @media (max-width: 767.98px) {
-    .hero-dark .hero-content h1 {
-      font-size: 2rem;
-    }
-    
-    .hero-dark .hero-content p {
-      font-size: 1rem;
-    }
-    
-    .contact-form {
-      padding: 1.5rem;
-    }
+  .contact-form {
+    padding: 1.5rem;
   }
-  
+}

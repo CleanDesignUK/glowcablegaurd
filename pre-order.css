@@ -54,15 +54,47 @@ body {
 /* Product Image */
 .product-img {
   border: 2px solid #28a745;
-  border-radius: 10px;
+  border-radius: 20px; /* Increased radius for product images */
 }
 
-/* Carousel Captions - Moved below the image */
+/* Carousel Styles */
+.carousel-img {
+  max-width: 400px;
+  border-radius: 30px;  /* Increased radius for carousel images */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 .carousel-caption {
   position: static !important;
   padding-top: 1rem;
-  color: #000;
   text-align: center;
+}
+
+/* Caption Styles for Each Colour */
+.carousel-caption h5 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.caption-neon-green {
+  color: #39FF14;  /* Neon green */
+}
+
+.caption-shocking-orange {
+  color: #FF5F1F;  /* Shocking orange */
+}
+
+.caption-aqua-blue {
+  color: #00FFFF;  /* Aqua blue */
+}
+
+.caption-bright-white {
+  color: #000;     /* Bright white remains black */
+}
+
+/* Make carousel description text black */
+.carousel-caption p {
+  color: #000;
 }
 
 /* Testimonials */
@@ -72,6 +104,29 @@ body {
 
 #testimonials img {
   border: 3px solid #28a745;
+}
+
+/* Card images (Stories) */
+.card-img-top {
+  border-radius: 15px;  /* Increase border-radius on story images */
+}
+
+/* Helper for Square Images */
+.square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* New styling for colour circles in the additional checklist */
+.color-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+  border: 1px solid #000;
 }
 
 /* Responsive Styles */
