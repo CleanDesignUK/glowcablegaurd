@@ -11,9 +11,24 @@
     }
   
     /* Hero Section Text Overrides */
-    .hero-dark .hero-content h1,
-    .hero-dark .hero-content p {
-      color: #fff !important;
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    /* Responsiveness for hero */
+    @media (max-width: 767px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section p {
+        font-size: 1rem;
+      }
     }
   .hero-section {min-height:60vh;}
     /* Contact Form */
