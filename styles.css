@@ -102,7 +102,7 @@
   
   .tech-navbar .nav-links li a:hover,
   .tech-navbar .nav-links li a.active {
-    border-color: var(--primary-accent);
+    border-color: var(--primary-accent) !important;
   }
   
   /* For smaller screens, you could add your own toggle logic if needed */
