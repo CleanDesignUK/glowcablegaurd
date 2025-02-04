@@ -28,6 +28,20 @@
     background-color: var(--white);
     line-height: 1.5;
   }
+
+  .navbar-logo {
+    height: 50px;          /* Not too large */
+    width: auto;
+    border-radius: 4px;     /* Very slight rounded corners */
+    margin-right: 10px;
+  }
+  
+  /* Media query: On smaller screens, shrink the logo slightly */
+  @media (max-width: 767px) {
+    .navbar-logo {
+      height: 40px;
+    }
+  }
   
   /* Anchor links */
   a {
@@ -129,37 +143,52 @@
      BUTTON STYLES
      ========================== */
   
-  .tech-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border: 2px solid transparent;
-    border-radius: 40px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
+     .tech-button {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 30px; /* Slightly less rounded */
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      border: 2px solid transparent;
   }
   
+  /* Primary Button (Solid) */
   .tech-button-accent {
-    background-color: var(--primary-accent);
-    color: var(--white);
+      background: linear-gradient(145deg, #00a37a, #008b63);
+      color: white;
+      border: none;
+      box-shadow: 0px 4px 15px rgba(0, 163, 122, 0.5);
   }
   
   .tech-button-accent:hover {
-    background-color: #008374; /* darker accent */
-    transform: scale(1.05);
+      background: linear-gradient(145deg, #008b63, #00724d);
+      box-shadow: 0px 6px 20px rgba(0, 163, 122, 0.8);
+      transform: translateY(-3px);
   }
   
+  /* Outline Button */
   .tech-button-outline {
-    background-color: transparent;
-    border-color: var(--primary-accent);
-    color: var(--primary-accent);
+      background: transparent;
+      border: 2px solid #00a37a;
+      color: #00a37a;
   }
   
   .tech-button-outline:hover {
-    background-color: var(--primary-accent);
-    color: var(--white);
-    transform: scale(1.05);
+      background: #00a37a;
+      color: white;
+      box-shadow: 0px 0px 10px rgba(0, 163, 122, 0.8);
+  }
+  
+  /* Adjust Button on Smaller Screens */
+  @media (max-width: 767px) {
+      .tech-button {
+          font-size: 1rem;
+          padding: 0.6rem 1.5rem;
+          border-radius: 25px;
+      }
   }
   
   /* ==========================

@@ -54,16 +54,7 @@ a:hover {
 /* ============================
    NAVBAR
 ============================ */
-.navbar {
-  padding: 1rem 2rem;
-  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
-}
 
-/* Active nav link highlight */
-.nav-link.active,
-.nav-link:hover {
-  color: var(--primary-accent) !important;
-}
 
 /* ============================
    HERO SECTION
