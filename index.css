@@ -12,7 +12,7 @@
     color: var(--white);
     padding: 3rem 1rem;
   }
-  
+  header {background-color: black !important;}
   /* Make sure text doesn't clash with overlay */
   .hero-section h1 {
     font-size: 3rem;
