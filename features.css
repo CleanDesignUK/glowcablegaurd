@@ -1,315 +1,301 @@
-/* features.css */
+/* ============================
+   GLOBAL STYLES & VARIABLES
+============================ */
+:root {
+  --black: #000;
+  --white: #fff;
+  --primary-accent: #28a745; /* Or #00b894, if you prefer the other accent */
+  --dark-grey: #333;
+  --light-grey: #f8f9fa;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --transition-speed: 0.3s;
+}
 
-/* General Styles */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f8f9fa; /* Light background for better readability */
-  }
-  
-  a {
-    text-decoration: none;
-    color: #28a745; /* Green accent for links */
-  }
-  
-  a:hover {
-    color: #218838; /* Darker green on hover */
-  }
-  
+  font-family: var(--body-font), sans-serif;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  line-height: 1.5;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center !important;
+}
+.white-text {
+  color: var(--white) !important;
+}
+.white-bg {
+  background-color: var(--white) !important;
+}
+.black-bg {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+a:hover {
+  color: #218838; /* Slightly darker if you keep #28a745 */
+}
+
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+  padding: 1rem 2rem;
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+/* Active nav link highlight */
+.nav-link.active,
+.nav-link:hover {
+  color: var(--primary-accent) !important;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.hero-dark {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("features-hero.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+  padding: 3rem 1rem;
+}
+
+/* Subtle neon glow for hero title */
+.glow-title {
+  color: var(--white);
+  text-shadow: 0 0 5px rgba(40,167,69,0.7), 0 0 10px rgba(40,167,69,0.5);
+  font-family: var(--heading-font), sans-serif;
+  font-weight: 700;
+}
+
+/* ============================
+   OBLIQUE DIVIDERS
+============================ */
+.oblique-divider {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  line-height: 0;
+}
+.oblique-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100%;
+}
+.oblique-divider-white svg path {
+  fill: #fff;
+}
+.oblique-divider-black svg path {
+  fill: #000;
+}
+
+/* ============================
+   SECTION HEADINGS & TEXT
+============================ */
+.section-title {
+  font-family: var(--heading-font), sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--dark-grey);
+}
+.white-text .section-title {
+  color: var(--white) !important;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+.white-text .section-text {
+  color: #ddd !important;
+}
+
+/* ============================
+   CARDS: FEATURES & STORIES
+============================ */
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.black-bg .card.story-card {
+  background-color: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-item {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.feature-item .card-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: var(--primary-accent);
+}
+.feature-item .card-text {
+  color: #666;
+}
+
+.story-card {
+  text-align: center;
+}
+.story-card .card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-accent);
+}
+.black-bg .story-card .card-title {
+  color: var(--white);
+}
+.story-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.black-bg .story-card .card-text {
+  color: #e0e0e0;
+}
+
+/* ============================
+   CTA SECTION
+============================ */
+.cta-section {
+  padding: 4rem 2rem;
+  border-radius: 0;
+  background-color: var(--white);
+  color: var(--dark-grey);
+}
+.cta-section .btn-glow {
+  background-color: var(--primary-accent);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: var(--white);
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+.cta-section .btn-glow:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* ============================
+   TESTIMONIALS SECTION
+============================ */
+#testimonials {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 4rem 2rem;
+}
+#testimonials .section-title {
+  color: var(--white);
+}
+
+/* Carousel buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+}
+.carousel-control-prev-icon.bg-success,
+.carousel-control-next-icon.bg-success {
+  background-color: var(--primary-accent);
+  border-radius: 50%;
+}
+.carousel-control-prev-icon.bg-success:hover,
+.carousel-control-next-icon.bg-success:hover {
+  background-color: #218838;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+footer a {
+  color: var(--white);
+  margin: 0 0.5rem;
+}
+footer a:hover {
+  color: var(--primary-accent);
+}
+
+/* ============================
+   RESPONSIVE ADJUSTMENTS
+============================ */
+@media (max-width: 992px) {
   .section-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    font-size: 2rem;
   }
-  
-  .section-text {
-    font-size: 1.1rem;
-    color: #555;
-    text-align: center;
-    margin-bottom: 2rem;
+  .hero-content h1 {
+    font-size: 2rem !important;
   }
-  
-  .white-bg {
-    background-color: #fff;
-    color: #333;
+  .hero-content p {
+    font-size: 1rem !important;
   }
-  
-  .black-bg {
-    background-color: #000;
-    color: #fff;
+}
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 2rem 1rem;
   }
-  
-  .content-section {
-    padding: 4rem 2rem;
+  .section-title {
+    font-size: 1.8rem;
   }
-  
-  .content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    background-color: #000;
-    padding: 1rem 2rem;
-  }
-  
-  .navbar .navbar-brand {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #28a745 !important;
-  }
-  
-  .navbar-nav .nav-link {
-    margin-left: 1.5rem;
-    font-weight: 600;
-    color: #fff !important;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link.active,
-  .navbar-nav .nav-link:hover {
-    color: #28a745 !important;
-  }
-  
-  /* Hero Section */
-  .hero-dark {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .hero-dark .hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-dark .hero-content p {
-    font-size: 1.2rem;
-    color: #ddd;
-  }
-  
-  /* Key Features Section */
-  .feature-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .feature-item {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feature-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #28a745;
-  }
-  
-  .feature-item p {
+  .section-subtitle {
     font-size: 1rem;
-    color: #555;
   }
-  
-  /* Extended Stories Section */
-  .stories-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .story-card {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .black-bg .story-card {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .story-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .story-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .story-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: #28a745;
-  }
-  
-  .black-bg .story-card h3 {
-    color: #fff;
-  }
-  
-  .story-card p {
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-  .black-bg .story-card p {
-    color: #ddd;
-  }
-  
-  /* CTA Section */
-  .cta-section {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 4rem 2rem;
-    border-radius: 10px;
-  }
-  
-  .cta-section .btn-glow {
-    background-color: #28a745;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    color: #fff;
-    font-size: 1.1rem;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cta-section .btn-glow:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-  }
-  
-  /* Testimonials Section */
-  #testimonials .carousel-item {
-    padding: 2rem;
-  }
-  
-  #testimonials img {
-    border: 3px solid #28a745;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-size: 100%, 100%;
-  }
-  
-  .carousel-control-prev-icon.bg-success,
-  .carousel-control-next-icon.bg-success {
-    background-color: #28a745;
-    border-radius: 50%;
-  }
-  
-  .carousel-control-prev-icon.bg-success:hover,
-  .carousel-control-next-icon.bg-success:hover {
-    background-color: #218838;
-  }
-  
-  /* Footer Styles */
-  .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1.5rem 2rem;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #28a745;
-    margin: 0 0.5rem;
-  }
-  
-  .footer a:hover {
-    color: #218838;
-  }
-  
-  /* Button Glow */
-  .btn-glow {
-    background-color: #28a745;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    color: #fff;
-    font-size: 1.1rem;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .btn-glow:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 991.98px) {
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .hero-dark .hero-content h1 {
-      font-size: 2rem;
-    }
-  
-    .hero-dark .hero-content p {
-      font-size: 1rem;
-    }
-  
-    .feature-item h3 {
-      font-size: 1.3rem;
-    }
-  
-    .story-card h3 {
-      font-size: 1.1rem;
-    }
-  }
-  
-  @media (max-width: 575.98px) {
-    .feature-grid,
-    .stories-grid {
-      flex-direction: column;
-    }
-  
-    .hero-dark .hero-content {
-      padding: 1rem;
-    }
-  
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .section-text {
-      font-size: 1rem;
-    }
-  }
-  
+}

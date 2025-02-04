@@ -7,10 +7,12 @@
   <title>Glow Cable Guard | Features</title>
   
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-        crossorigin="anonymous">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+  >
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +28,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" style="max-width:100vw; background-color: black !important;">
     <div class="container">
       <a class="navbar-brand fw-bold text-success" href="index.html">Glow Cable Guard</a>
       <button 
@@ -62,25 +64,35 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (Black BG, White Text) -->
   <section 
-    class="hero hero-dark d-flex align-items-center justify-content-center text-center text-white py-5" 
-    style="background: linear-gradient(
-      rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6)
-    ), url('features-hero.jpg') center/cover no-repeat;"
+    class="hero hero-dark d-flex align-items-center justify-content-center text-center text-white"
   >
-    <div class="container">
-      <h1 class="display-4 fw-bold">Designed for Safety, Built for Durability</h1>
-      <p class="lead my-4">Dive deeper into how Glow Cable Guard safeguards your EV charging routine.</p>
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold glow-title">
+        Designed for Safety, Built for Durability
+      </h1>
+      <p class="lead my-4">
+        Dive deeper into how Glow Cable Guard safeguards your EV charging routine.
+      </p>
     </div>
   </section>
 
-  <!-- KEY FEATURES SECTION -->
-  <section class="white-bg content-section">
+  <!-- Angled Divider (hero -> key features) -->
+  <div class="oblique-divider oblique-divider-white">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M1200 0H0L0 100 1200 0Z"></path>
+    </svg>
+  </div>
+
+  <!-- KEY FEATURES SECTION (White BG, Black Text) -->
+  <section class="white-bg content-section" style="padding-top: 4rem;">
     <div class="container">
       <h2 class="section-title">Key Features</h2>
-      <div class="row ">
+      <p class="section-subtitle">
+        Get a closer look at the technology behind our innovative cable guard system.
+      </p>
+      <div class="row mt-5">
         <!-- Feature 1 -->
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card feature-item h-100 text-center">
@@ -93,8 +105,8 @@
             <div class="card-body">
               <h3 class="card-title">Glow-in-the-Dark Tech</h3>
               <p class="card-text">
-                Photoluminescent materials absorb light and glow brightly after dark, 
-                ensuring your cable is seen at night.
+                Photoluminescent materials absorb light and glow after dark, 
+                ensuring your cable is seen all night long.
               </p>
             </div>
           </div>
@@ -111,8 +123,8 @@
             <div class="card-body">
               <h3 class="card-title">Spiral Wrap Design</h3>
               <p class="card-text">
-                A flexible coil that wraps around cables of various diameters, 
-                protecting and bundling them for neat storage.
+                A flexible coil that neatly wraps around cables of various diameters, 
+                preventing tangles and messy setups.
               </p>
             </div>
           </div>
@@ -129,7 +141,7 @@
             <div class="card-body">
               <h3 class="card-title">All-Weather Resistant</h3>
               <p class="card-text">
-                UV, rain, or snow—Glow Cable Guard is built to handle 
+                UV, rain, or snow—Glow Cable Guard is engineered to handle 
                 tough outdoor conditions year-round.
               </p>
             </div>
@@ -145,10 +157,10 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h3 class="card-title">Tool-Free Installation</h3>
+              <h3 class="card-title">Tool-Free Setup</h3>
               <p class="card-text">
-                Simply wrap and go. No special tools required, meaning 
-                anyone can secure their EV cables quickly.
+                Simply wrap and go. No special tools are required, so 
+                anyone can secure their EV cables in minutes.
               </p>
             </div>
           </div>
@@ -157,14 +169,21 @@
     </div>
   </section>
 
-  <!-- EXTENDED STORIES SECTION -->
-  <section class="black-bg content-section">
+  <!-- Angled Divider (key features -> extended stories) -->
+  <div class="oblique-divider oblique-divider-black">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M0,100H1200V0L0,100Z"></path>
+    </svg>
+  </div>
+
+  <!-- EXTENDED STORIES SECTION (Black BG, White Text) -->
+  <section class="black-bg content-section" style="padding-top: 4rem;">
     <div class="container">
-      <h2 class="section-title white-text">Real-Life Incidents & Near Misses</h2>
+      <h2 class="section-title white-text">Real-Life Incidents &amp; Near Misses</h2>
       <p class="section-text white-text text-center mb-5">
         Hear more accounts of why an illuminated, protective cable solution is essential.
       </p>
-      <div class="row ">
+      <div class="row">
         <!-- Story 1 -->
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card story-card h-100 text-center">
@@ -177,8 +196,8 @@
             <div class="card-body">
               <h3 class="card-title">Public Safety in Sawtell (2023)</h3>
               <p class="card-text">
-                A resident running an EV cable across a public footpath caused outrage 
-                due to the clear trip hazard—particularly at night.
+                A resident running an EV cable across a public footpath caused outrage—
+                especially at night.
               </p>
             </div>
           </div>
@@ -196,7 +215,7 @@
               <h3 class="card-title">Liability in San Francisco (2023)</h3>
               <p class="card-text">
                 Reddit users debated the legal responsibilities of EV owners 
-                when cables spanned public sidewalks without adequate lighting.
+                when cables spanned public sidewalks without proper signage.
               </p>
             </div>
           </div>
@@ -214,7 +233,7 @@
               <h3 class="card-title">Disability Advocates (2021)</h3>
               <p class="card-text">
                 A disability group in Camden highlighted how cables blocking 
-                sidewalks greatly impact those with mobility aids.
+                sidewalks greatly affect those with mobility aids.
               </p>
             </div>
           </div>
@@ -229,10 +248,10 @@
               loading="lazy"
             />
             <div class="card-body">
-              <h3 class="card-title">Workplace Safety Alerts (2023)</h3>
+              <h3 class="card-title">Workplace Safety (2023)</h3>
               <p class="card-text">
                 Corporate parking lots faced legal challenges when employees 
-                tripped over charging cables—leading to HR and liability issues.
+                tripped over EV cables—leading to liability concerns.
               </p>
             </div>
           </div>
@@ -241,7 +260,14 @@
     </div>
   </section>
 
-  <!-- CTA SECTION -->
+  <!-- Angled Divider (extended stories -> CTA) -->
+  <div class="oblique-divider oblique-divider-white">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M1200 0H0L0 100 1200 0Z"></path>
+    </svg>
+  </div>
+
+  <!-- CTA SECTION (White BG, Black Text) -->
   <section class="white-bg cta-section text-center py-5">
     <div class="container">
       <h2 class="section-title mb-4">Ready to Make Your EV Charging Setup Safer?</h2>
@@ -252,47 +278,47 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS SECTION -->
+  <!-- TESTIMONIALS SECTION (Black BG, White Text) -->
   <section id="testimonials" class="py-5 bg-black text-white">
     <div class="container">
       <h2 class="section-title text-center mb-4">What Our Customers Say</h2>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
           <!-- Testimonial 1 -->
           <div class="carousel-item active text-center">
-            <img src="https://yourdomain.com/images/user1.webp" alt="Customer 1" class="rounded-circle mb-3" width="100" height="100">
+      
             <h5>Jane Doe</h5>
-            <p class="text-muted">"Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!"</p>
+            <p class="text-white">
+              “Glow Cable Guard has made charging my EV so much safer at night. Highly recommended!”
+            </p>
           </div>
           <!-- Testimonial 2 -->
           <div class="carousel-item text-center">
-            <img src="https://yourdomain.com/images/user2.webp" alt="Customer 2" class="rounded-circle mb-3" width="100" height="100">
+       
             <h5>John Smith</h5>
-            <p class="text-muted">"A must-have for any EV owner. Easy to install and incredibly effective."</p>
+            <p class="text-white">
+              “A must-have for any EV owner. Easy to install and incredibly effective.”
+            </p>
           </div>
           <!-- Testimonial 3 -->
           <div class="carousel-item text-center">
-            <img src="https://yourdomain.com/images/user3.webp" alt="Customer 3" class="rounded-circle mb-3" width="100" height="100">
+     
             <h5>Emily Johnson</h5>
-            <p class="text-muted">"No more tripping over cables in my driveway. Fantastic product!"</p>
+            <p class="text-white">
+              “No more tripping over cables in my driveway. Fantastic product!”
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (Black BG) -->
   <footer class="bg-black text-white py-4">
     <div class="container text-center">
-      <p class="mb-0">&copy; <span id="year"></span> Glow Cable Guard. All rights reserved.</p>
+      <p class="mb-0">
+        &copy; <span id="year"></span> Glow Cable Guard. All rights reserved.
+      </p>
       <div class="mt-2">
         <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
         <a href="terms.html" class="text-white">Terms of Service</a>
@@ -301,10 +327,11 @@
   </footer>
 
   <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-          crossorigin="anonymous">
-  </script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"
+  ></script>
   
   <!-- Custom JS -->
   <script>
