@@ -190,6 +190,8 @@
           border-radius: 25px;
       }
   }
+
+  
   
   /* ==========================
      FORM ELEMENTS
@@ -209,6 +211,10 @@
     font-weight: 600;
   }
   
+  section {
+    margin-top: -1px; 
+    margin-bottom: -1px;
+  }
   /* ==========================
      UTILITY / HELPER CLASSES
      ========================== */

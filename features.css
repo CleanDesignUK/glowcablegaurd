@@ -21,7 +21,7 @@
 
 body {
   font-family: var(--body-font), sans-serif;
-  background-color: var(--light-grey);
+ 
   color: var(--dark-grey);
   line-height: 1.5;
 }
@@ -61,7 +61,7 @@ a:hover {
 ============================ */
 .hero-dark {
   position: relative;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +161,7 @@ a:hover {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 

@@ -32,6 +32,7 @@
     .hero-section p {
       font-size: 1rem;
     }
+    .card-img-top {height:400px;}
   }
   
   /* Video Wrapper: restrict proportion if desired */
@@ -62,6 +63,8 @@
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
+
+  .card-img-top {height:500px;}
   
   .smokey-card .card-body {
     padding: 1rem;
