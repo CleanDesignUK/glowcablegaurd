@@ -22,10 +22,10 @@
     rel="stylesheet"
   />
   
-  <!-- Global Styles (Example) -->
+  <!-- Global Styles -->
   <link rel="stylesheet" href="styles.css" />
   
-  <!-- Page-Specific Styles (Example) -->
+  <!-- Page-Specific Styles -->
   <link rel="stylesheet" href="index.css" />
 
   <!-- Inline Section Overrides: Force BG & Text Colors -->
@@ -77,120 +77,94 @@
       fill: #000;
     }
 
-/* ========== ELEVATE REAL INCIDENTS SECTION ========== */
-#real-incidents {
-  position: relative;
-  background-color: #fff !important; /* Already forced white from your inline overrides */
-  color: #000 !important;           /* Ensures black text */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  z-index: 1; /* So it can appear 'above' any decorative elements */
-  overflow: hidden; /* For any pseudo-element backgrounds */
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  /* Slight, subtle shadow around the entire section */
-}
-
-
-
-/* Optionally, add a similar gradient at the bottom if you like */
-#real-incidents::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 120%;
-  height: 100px;
-  background: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.06) 0%,
-    rgba(0,0,0,0) 100%
-  );
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Extra shadow/hover for smokey cards if desired */
-.smokey-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.smokey-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Ensure smokey card images have a fixed height and consistent appearance */
-/* Set a fixed height for the card image */
-.smokey-card .card-img-top {
-  height: 350px;           /* Fixed height for images */
-  object-fit: cover;        /* Crop the image to fill the area */
-  width: 100%;
-}
-
-/* Ensure all smokey cards have a consistent minimum height */
-.smokey-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 500px;        /* Adjust as needed for your design */
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Standard card body styling without flex display to avoid text collapse */
-.smokey-card .card-body {
-  padding: 1rem;
-  color:black !important;
-  /* Removing display: flex to allow natural block layout */
-}
-
-/* Optional hover effect */
-.smokey-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Styles for the Professional Benefits Card */
-.card-benefits {
-  background-color: #f8f9fa; /* Light background */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.card-benefits:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Remove default list styling and add spacing */
-.card-benefits ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.card-benefits li {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-}
-
-/* Style the check mark icons */
-.card-benefits li i {
-  font-size: 1.2rem;
-  color: #28a745; /* Green color for check marks */
-  margin-right: 0.5rem;
-}
-
+    /* KEEP existing styling from your snippet for real incidents, smokey cards, etc. */
+    #real-incidents {
+      position: relative;
+      background-color: #fff !important;
+      color: #000 !important;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      z-index: 1;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    #real-incidents::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      width: 120%;
+      height: 100px;
+      background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.06) 0%,
+        rgba(0,0,0,0) 100%
+      );
+      pointer-events: none;
+      z-index: -1;
+    }
+    .smokey-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .smokey-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .smokey-card .card-img-top {
+      height: 350px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .smokey-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 500px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .smokey-card .card-body {
+      padding: 1rem;
+      color:black !important;
+    }
+    .smokey-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .card-benefits {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .card-benefits:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .card-benefits ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .card-benefits li {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+    }
+    .card-benefits li i {
+      font-size: 1.2rem;
+      color: #28a745;
+      margin-right: 0.5rem;
+    }
   </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
@@ -218,14 +192,12 @@
   }
   </script>
 
-
   <meta property="og:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview-2.jpg">
   <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview-2.jpg">
-<link rel="icon" type="image/jpeg" href="glow-cable-guard-logo-50x50.jpg">
-<meta property="og:url" content="https://glowcableguard.co.uk">
-
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview-2.jpg">
+  <link rel="icon" type="image/jpeg" href="glow-cable-guard-logo-50x50.jpg">
+  <meta property="og:url" content="https://glowcableguard.co.uk">
 </head>
 <body>
   <!-- =========================
@@ -234,8 +206,7 @@
   <header class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" style="max-width: 100vw;">
     <div class="container bg-black">
       <a class="navbar-brand fw-bold text-success" href="index.html">
-        <img src="GCG-logo-rect.jpg" alt="Glow Cable Guard Logo" class="navbar-logo" />
-       
+        <img src="GCG-logo-rect.jpg" alt="Glow Cable Guard Logo" class="navbar-logo" loading="lazy" />
       </a>
       <button 
         class="navbar-toggler" 
@@ -296,72 +267,68 @@
   ========================== -->
   <section id="why-choose" class="py-5">
     <div class="container">
- 
-          <div class="row mb-5 align-items-center">
-            <div class="col-md-6">
-              <h2 class="mb-3 ">Why Choose Glow Cable Guard?</h2>
-              <p class="mb-3">
-                With EV usage on the rise, charging cables become hazardous at night.
-                Glow Cable Guard solves this by making your cable highly visible—day or night—while protecting it from wear.
-              </p>
-              <!-- Professional Benefits Card -->
-              <div class="card card-benefits mb-4">
-                <div class="card-body">
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-2">
-                      <i class="bi bi-check-lg"></i>
-                      Glow-in-the-dark for safer walkways
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check-lg"></i>
-                      UV reflective for enhanced visibility
-                    </li>
-                    <li class="mb-2">
-                      <i class="bi bi-check-lg"></i>
-                      Weather-resistant to protect costly cables
-                    </li>
-                    <li>
-                      <i class="bi bi-check-lg"></i>
-                      Simple, tool-free spiral design fits all standard EV cables
-                    </li>
-                  </ul>
-                </div>
-              </div>
-        
-              <!-- TESTIMONIALS AUTO-SLIDER (No Buttons) -->
-              <div class="row">
-                <div class="col-12 py-3 text-start">
-                  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active text-center">
-                        <p>
-                          “Glow Cable Guard has made night-time charging so much safer. Highly recommended!”
-                          <br /><strong>— Jane Doe</strong>
-                        </p>
-                      </div>
-                      <div class="carousel-item text-center">
-                        <p>
-                          “A must-have for any EV owner. Easy to install and incredibly effective.”
-                          <br /><strong>— John Smith</strong>
-                        </p>
-                      </div>
-                      <div class="carousel-item text-center">
-                        <p>
-                          “No more tripping over cables in my driveway. Fantastic product!”
-                          <br /><strong>— Emily Johnson</strong>
-                        </p>
-                      </div>
-                    </div>
-                    <!-- No controls or indicators -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+          <h2 class="mb-3">Why Choose Glow Cable Guard?</h2>
+          <p class="mb-3">
+            With EV usage on the rise, charging cables become hazardous at night.
+            Glow Cable Guard solves this by making your cable highly visible—day or night—while protecting it from wear.
+          </p>
+          <!-- Professional Benefits Card -->
+          <div class="card card-benefits mb-4">
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <i class="bi bi-check-lg"></i>
+                  Glow-in-the-dark for safer walkways
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-lg"></i>
+                  UV reflective for enhanced visibility
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-lg"></i>
+                  Weather-resistant to protect costly cables
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i>
+                  Simple, tool-free spiral design fits all standard EV cables
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- TESTIMONIALS AUTO-SLIDER (No Buttons) -->
+          <div class="row">
+            <div class="col-12 py-3 text-start">
+              <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <p>
+                      “Glow Cable Guard has made night-time charging so much safer. Highly recommended!”
+                      <br /><strong>— Jane Doe</strong>
+                    </p>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <p>
+                      “A must-have for any EV owner. Easy to install and incredibly effective.”
+                      <br /><strong>— John Smith</strong>
+                    </p>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <p>
+                      “No more tripping over cables in my driveway. Fantastic product!”
+                      <br /><strong>— Emily Johnson</strong>
+                    </p>
                   </div>
                 </div>
+                <!-- No controls or indicators -->
               </div>
             </div>
-            <!-- Other columns (e.g., for an image carousel) would follow here -->
-    
+          </div>
+        </div>
         <div class="col-md-6">
           <!-- Carousel to showcase day/night variants -->
-          <div id="productVariantCarousel" class="carousel slide mx-auto border border-success" data-bs-ride="carousel" data-bs-interval="2300" style="width:90%; ">
+          <div id="productVariantCarousel" class="carousel slide mx-auto border border-success" data-bs-ride="carousel" data-bs-interval="2300" style="width:90%;">
             <div class="carousel-inner shadow rounded">
               <div class="carousel-item active">
                 <img
@@ -388,167 +355,273 @@
                 />
               </div>
             </div>
-
-
-           
             <!-- No next/prev buttons to keep it simple & auto-rotating -->
           </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  
+  <!-- ===== Short Features Section (cards) & Car Image/Text Side by Side ===== -->
+  <section id="short-features" class="py-5" style="background-color: #fff;">
+    <div class="container">
+      <!-- SHORT FEATURES HEADER -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-4">Key Highlights</h2>
+          <p class="mb-0" style="max-width: 600px; margin: 0 auto;">
+            Discover some of Glow Cable Guard's most essential features at a glance.
+          </p>
+        </div>
       </div>
-      </section>
-  <!-- Angled Divider (why-choose -> video-demo) -->
+      <!-- SHORT FEATURES CARDS -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="feature-glow.jpg" class="card-img-top" alt="Glowing feature" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Glowing Visibility</h5>
+              <p class="card-text">
+                Photoluminescent material keeps your cable easy to see, reducing trip risks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="feature-weather.jpg" class="card-img-top" alt="Weather-resistant feature" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Weather-Resistant</h5>
+              <p class="card-text">
+                Designed to stand up to rain, snow, and harsh UV rays for long-lasting protection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="feature-install.jpg" class="card-img-top" alt="Easy installation feature" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Simple Installation</h5>
+              <p class="card-text">
+                No tools required—just spiral it around your EV charging cable and you’re set.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE + TEXT: Car being charged with Glow Cable Guard installed -->
+      <div class="row align-items-center">
+        <!-- Image on the left (lazy loading) -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img 
+            src="car-charging-glow-cable.jpg" 
+            alt="Car being charged with Glow Cable Guard installed"
+            class="img-fluid rounded shadow"
+            loading="lazy"
+          />
+        </div>
+        <!-- Text on the right -->
+        <div class="col-md-6">
+          <h3 class="mb-3">See It in Action</h3>
+          <p>
+            Experience peace of mind knowing your EV cable is both protected and visible. 
+            Glow Cable Guard helps reduce the risk of trips and falls, while also preventing 
+            damage to your costly charging cable. Enjoy a safer charging routine every day.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Angled Divider (why-choose / short-features -> video-demo) -->
   <div class="oblique-divider oblique-divider-black">
     <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
       <path d="M0,100H1200V0L0,100Z"></path>
     </svg>
   </div>
-  
+
   <!-- =========================
        VIDEO DEMO (Black BG, White Text)
   ========================== -->
-  <!-- VIDEO DEMO SECTION -->
-<section id="video-demo" class="py-5">
-  <div class="row">
-    <!-- Video Demo 1 -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="container text-center">
-        <h2 class="mb-3">See Glow Cable Guard in Action</h2>
-        <div class="d-flex justify-content-center">
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/kQfLmziMNOc?autoplay=1&mute=1&loop=1&playlist=kQfLmziMNOc&controls=0&modestbranding=1&rel=0"
-              title="Glow Cable Guard Demo Video"
-              allow="autoplay; encrypted-media"
-              loading="lazy"
-              style="border: none; width: 100%; height: 100%;"
-            ></iframe>
+  <section id="video-demo" class="py-5">
+    <div class="row">
+      <!-- Video Demo 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="container text-center">
+          <h2 class="mb-3">See Glow Cable Guard in Action</h2>
+          <div class="d-flex justify-content-center">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/kQfLmziMNOc?autoplay=1&mute=1&loop=1&playlist=kQfLmziMNOc&controls=0&modestbranding=1&rel=0"
+                title="Glow Cable Guard Demo Video"
+                allow="autoplay; encrypted-media"
+                loading="lazy"
+                style="border: none; width: 100%; height: 100%;"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video Demo 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="container text-center">
+          <h2 class="mb-3">See Glow Cable Guard in Action</h2>
+          <div class="d-flex justify-content-center">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/gu-UWNUlRGU?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1&loop=1&playlist=gu-UWNUlRGU"
+                title="Glow Cable Guard Demo Video"
+                allow="autoplay; encrypted-media"
+                loading="lazy"
+                style="border: none; width: 100%; height: 100%;"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video Demo 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="container text-center">
+          <h2 class="mb-3">See Glow Cable Guard in Action</h2>
+          <div class="d-flex justify-content-center">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/cTPhlLvaEHk?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1&loop=1&playlist=cTPhlLvaEHk"
+                title="Glow Cable Guard Demo Video"
+                allow="autoplay; encrypted-media"
+                loading="lazy"
+                style="border: none; width: 100%; height: 100%;"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Video Demo 2 -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="container text-center">
-        <h2 class="mb-3">See Glow Cable Guard in Action</h2>
-        <div class="d-flex justify-content-center">
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/gu-UWNUlRGU?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1&loop=1&playlist=gu-UWNUlRGU"
-              title="Glow Cable Guard Demo Video"
-              allow="autoplay; encrypted-media"
-              loading="lazy"
-              style="border: none; width: 100%; height: 100%;"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Demo 3 -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="container text-center">
-        <h2 class="mb-3">See Glow Cable Guard in Action</h2>
-        <div class="d-flex justify-content-center">
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/cTPhlLvaEHk?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1&loop=1&playlist=cTPhlLvaEHk"
-              title="Glow Cable Guard Demo Video"
-              allow="autoplay; encrypted-media"
-              loading="lazy"
-              style="border: none; width: 100%; height: 100%;"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-  
-  <!-- Angled Divider (video-demo -> real-incidents) -->
-  <div class="oblique-divider oblique-divider-white">
-    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
-      <path d="M1200 0H0L0 100 1200 0Z"></path>
-    </svg>
-  </div>
+ 
   
   <!-- =========================
        REAL INCIDENTS (White BG, Black Text)
   ========================== -->
-<!-- =========================
-     REAL INCIDENTS (White BG, Black Text)
-========================== -->
-<section id="real-incidents" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Real Incidents That Demand a Solution</h2>
-    <p class="text-center mb-5">
-      These real-world cases highlight why proper EV cable safety is crucial.
-    </p>
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="smokey-card h-100">
-          <img src="legal-case.jpg" class="card-img-top" alt="Legal case" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">Legal Implications (2021)</h5>
-            <p class="card-text">
-              A lawsuit was filed after an accident involving a poorly lit EV cable.
-              Negligence claims can have severe consequences.
-            </p>
+  <section id="real-incidents" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Real Incidents That Demand a Solution</h2>
+      <p class="text-center mb-5">
+        These real-world cases highlight why proper EV cable safety is crucial.
+      </p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="smokey-card h-100">
+            <img src="legal-case.jpg" class="card-img-top" alt="Legal case" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Legal Implications (2021)</h5>
+              <p class="card-text">
+                A lawsuit was filed after an accident involving a poorly lit EV cable.
+                Negligence claims can have severe consequences.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="smokey-card h-100">
+            <img src="community-concern.jpg" class="card-img-top" alt="Community concern" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Community Concerns (2021)</h5>
+              <p class="card-text">
+                Users reported near-miss incidents, stressing the urgent need 
+                for improved cable visibility solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="smokey-card h-100">
+            <img src="public-trip-hazard.jpg" class="card-img-top" alt="Public trip hazard" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Trip Hazards in Public (2022)</h5>
+              <p class="card-text">
+                Cables crossing sidewalks at night have led to near-misses,
+                proving the need for protective measures.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="smokey-card h-100">
+            <img src="insurance-concerns.jpg" class="card-img-top" alt="Insurance concerns" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Insurance Risks (2024)</h5>
+              <p class="card-text">
+                Insurance providers warn that inadequate cable safety can lead to liability 
+                claims if accidents occur.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="smokey-card h-100">
-          <img src="community-concern.jpg" class="card-img-top" alt="Community concern" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">Community Concerns (2021)</h5>
-            <p class="card-text">
-              Users reported near-miss incidents, stressing the urgent need 
-              for improved cable visibility solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="smokey-card h-100">
-          <img src="public-trip-hazard.jpg" class="card-img-top" alt="Public trip hazard" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">Trip Hazards in Public (2022)</h5>
-            <p class="card-text">
-              Cables crossing sidewalks at night have led to near-misses,
-              proving the need for protective measures.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="smokey-card h-100">
-          <img src="insurance-concerns.jpg" class="card-img-top" alt="Insurance concerns" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">Insurance Risks (2024)</h5>
-            <p class="card-text">
-              Insurance providers warn that inadequate cable safety can lead to liability 
-              claims if accidents occur.
-            </p>
-          </div>
-        </div>
+      <div class="text-center mt-5">
+        <a href="features.html" class="tech-button tech-button-outline">Explore More Cases</a>
       </div>
     </div>
-    <div class="text-center mt-5">
-      <a href="features.html" class="tech-button tech-button-outline">Explore More Cases</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-  
- 
-  
+  <!-- ===== FAQs (moved onto the home page) ===== -->
+
+
+  <section id="faqs" class="py-5" style="background-color:#fff;">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <p class="text-center mb-5" style="max-width: 600px; margin: 0 auto;">
+        Answers to some of the most common questions about Glow Cable Guard.
+      </p>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is Glow Cable Guard?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Glow Cable Guard is designed to make EV charging cables highly visible, helping to prevent trips and damage.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How does it work?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Using glow-in-the-dark and UV-reflective technology, Glow Cable Guard remains visible in low-light conditions without needing batteries or an external power source.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How do I order?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Simply visit our Pre-Order page or click any “Pre-Order” button throughout this site. Secure your Glow Cable Guard at a special early-bird price.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- =========================
        CALL TO ACTION (Black BG, White Text)
   ========================== -->
@@ -578,32 +651,36 @@
       </div>
     </div>
   </footer>
-<!-- Cookie Acceptance Notification -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; padding: 15px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif;">
-  <span style="font-size: 1rem;">
-    We use cookies to improve your experience. By continuing, you accept our 
-    <a href="cookie-policy.html" style="color: #28a745; text-decoration: underline;">Cookie Policy</a>.
-  </span>
-  <button onclick="acceptCookies()" style="margin-left: 15px; background: #28a745; border: none; padding: 10px 20px; font-size: 1rem; color: #fff; border-radius: 5px; cursor: pointer;">
-    Accept
-  </button>
-</div>
 
-<script>
-  // Function to hide the cookie banner and save the consent
-  function acceptCookies() {
-    document.getElementById('cookie-banner').style.display = 'none';
-    // Save consent in localStorage so the banner does not reappear
-    localStorage.setItem('cookieConsent', 'accepted');
-  }
-  
-  // On page load, check for consent and hide the banner if already accepted
-  window.onload = function() {
-    if (localStorage.getItem('cookieConsent') === 'accepted') {
+  <!-- Cookie Acceptance Notification -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; padding: 15px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif;">
+    <span style="font-size: 1rem;">
+      We use cookies to improve your experience. By continuing, you accept our 
+      <a href="cookie-policy.html" style="color: #28a745; text-decoration: underline;">Cookie Policy</a>.
+    </span>
+    <button onclick="acceptCookies()" style="margin-left: 15px; background: #28a745; border: none; padding: 10px 20px; font-size: 1rem; color: #fff; border-radius: 5px; cursor: pointer;">
+      Accept
+    </button>
+  </div>
+
+  <script>
+    // Function to hide the cookie banner and save the consent
+    function acceptCookies() {
       document.getElementById('cookie-banner').style.display = 'none';
+      // Save consent in localStorage so the banner does not reappear
+      localStorage.setItem('cookieConsent', 'accepted');
     }
-  };
-</script>
+    
+    // On page load, check for consent and hide the banner if already accepted
+    window.onload = function() {
+      if (localStorage.getItem('cookieConsent') === 'accepted') {
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
+    };
+
+    // Dynamically update the year in the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <!-- Bootstrap Bundle JS -->
   <script
@@ -614,11 +691,7 @@
 
   <!-- Custom Scripts -->
   <script>
-    // Dynamically update the year in the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Navbar scroll effect for adding shadow
-  
+    // (Optional) Add any custom scripts for animations, etc.
   </script>
 </body>
 </html>
