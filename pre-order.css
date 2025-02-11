@@ -198,3 +198,45 @@ body {
     font-size: 1rem !important;
   }
 }
+
+
+/* B2B SALES SECTION */
+#b2b-sales {
+  background-color: #000; /* Matches your site's black theme */
+  position: relative;
+}
+
+#b2b-sales .b2b-hero-img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Attractive drop shadow */
+  margin: 0 auto; /* Center if needed */
+}
+
+#b2b-sales .b2b-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#b2b-sales .b2b-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 650px;
+}
+
+#b2b-sales .b2b-table thead {
+  background-color: #111 !important; 
+}
+#b2b-sales .b2b-table tbody {
+  background-color: #222 !important;
+}
+#b2b-sales .b2b-table td,
+#b2b-sales .b2b-table th {
+  vertical-align: middle;
+}
+
+/* Table hover effect for an extra pop */
+#b2b-sales .b2b-table tbody tr:hover {
+  background-color: #333 !important;
+}
