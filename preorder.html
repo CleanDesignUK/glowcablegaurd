@@ -83,10 +83,14 @@
     <div class="container text-center hero-content">
       <h1 class="display-4 fw-bold glow-text text-white">Pre-Order Glow Cable Guard</h1>
       <p class="lead my-4">Secure your spot and enjoy our exclusive early-bird discount.</p>
-      <!-- Direct link to Stripe Payment Link -->
-      <a href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" class="btn tech-button tech-button-accent">
-        Pre-Order &amp; Pay Now
-      </a>
+      <!-- Trigger the modal instead of direct link -->
+      <button 
+        class="btn tech-button tech-button-accent"
+        data-bs-toggle="modal"
+        data-bs-target="#lengthModal"
+      >
+        Pre-Order Now
+      </button>
       <p class="mt-3 mb-0">
         <strong>Hurry! Limited-time offer ends soon.</strong>
       </p>
@@ -155,7 +159,7 @@
               <strong>Colours:</strong> Multiple glow and reflective options
             </li>
             <li class="list-group-item">
-              <strong>Lengths:</strong> From 1m to 10m (prices vary)
+              <strong>Lengths:</strong> From 1m to 7m (prices vary)
             </li>
           </ul>
         </div>
@@ -200,13 +204,15 @@
                 <p class="mb-4">
                   Bright, futuristic, and perfect for maximum night-time visibility.
                 </p>
-                <a 
-                  href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
-                  class="btn btn-glow"  
+                <!-- Trigger the same modal for length selection -->
+                <button 
+                  class="btn btn-glow"
                   style="background-color: #39FF14 !important; color:white !important;"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lengthModal"
                 >
                   Pre-Order
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -231,13 +237,14 @@
                 <p class="mb-4">
                   Vibrant and energetic—guaranteed to make a statement in any driveway.
                 </p>
-                <a 
-                  href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
+                <button 
                   class="btn btn-glow" 
                   style="background-color: #FF5F1F !important; color:white!important;"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lengthModal"
                 >
                   Pre-Order
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -262,13 +269,14 @@
                 <p class="mb-4">
                   Cool, refreshing, and modern—adds that unique flair to your EV setup.
                 </p>
-                <a 
-                  href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
+                <button 
                   class="btn btn-glow" 
                   style="background-color: #00FFFF !important; color:black !important;"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lengthModal"
                 >
                   Pre-Order
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -293,27 +301,30 @@
                 <p class="mb-4">
                   Clean and classic, for those who love a minimalist, modern look.
                 </p>
-                <a 
-                  href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
+                <button 
                   class="btn btn-glow" 
                   style="background-color: white !important; color:black!important;"
+                  data-bs-toggle="modal"
+                  data-bs-target="#lengthModal"
                 >
                   Pre-Order
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
       </div>
-      <!-- CTA below flip-cards -->
+      <!-- Optional CTA below flip-cards -->
       <div class="mt-5">
-        <a 
-          href="https://buy.stripe.com/5kA3ec4nV1Xx7qUbII" 
+        <!-- Could also trigger same modal or link somewhere else -->
+        <button 
           class="btn tech-button-accent tech-button-outline px-5"
+          data-bs-toggle="modal"
+          data-bs-target="#lengthModal"
         >
-          Pre-Order &amp; Pay Now
-        </a>
+          Pre-Order Your Cable Guard
+        </button>
       </div>
     </div>
   </section>
@@ -357,7 +368,6 @@
     </div>
   </section>
 
-  <!-- ============= NEW B2B SALES SECTION ============= -->
   <!-- Angled Divider (Testimonials -> B2B) -->
   <div class="oblique-divider oblique-divider-black">
     <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
@@ -365,76 +375,45 @@
     </svg>
   </div>
 
-
-
-<section id="b2b-sales" class="py-5 text-white">
-  <div class="container">
-    <!-- ROW: Image + Headline/Text -->
-    <div class="row align-items-center">
-      <!-- B2B Image -->
-      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
-        <img 
-          src="b2b.jpg" 
-          alt="B2B Fleet EV Charging Safety" 
-          class="b2b-hero-img" 
-          loading="lazy"
-        />
-      </div>
-      <!-- B2B Text -->
-      <div class="col-lg-6">
-        <h2 class="b2b-title  text-center text-white">B2B Partnerships &amp; Bulk Ordering</h2>
-        <p class="b2b-subtitle">
-          Looking to protect multiple EV cables or supply your business clients with a safer charging solution?
-          Our <strong>no minimum purchase</strong> policy and <strong>free postage &amp; packing</strong> introductory
-          offer make bulk orders both flexible and cost-effective. 
-        </p>
-        <p>
-          Glow Cable Guard’s high-visibility wrap helps organisations of all sizes reduce liabilities and 
-          maintain a safer environment for employees, customers, and visitors. 
-          Equip your entire fleet or stock up for your retail clients—whatever your needs, 
-          we’re here to support your EV safety goals.
-        </p>
-      </div>
-    </div>
-    
-    <!-- ROW: Pricing Table -->
-    <div class="row justify-content-center my-5">
-      <div class="col-md-10 col-lg-8">
-        <div class="table-responsive">
-          <table class="table table-dark table-hover align-middle text-center b2b-table">
-            <thead>
-              <tr>
-                <th scope="col">Length (Metres)</th>
-                <th scope="col">Price (GBP)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1 metre</td><td>£9.99</td></tr>
-              <tr><td>2 metres</td><td>£14.99</td></tr>
-              <tr><td>3 metres</td><td>£19.99</td></tr>
-              <tr><td>4 metres</td><td>£24.99</td></tr>
-              <tr><td>5 metres</td><td>£29.99</td></tr>
-              <tr><td>6 metres</td><td>£34.99</td></tr>
-              <tr><td>7 metres</td><td>£39.99</td></tr>
-            </tbody>
-          </table>
+  <!-- B2B SALES SECTION -->
+  <section id="b2b-sales" class="py-5 text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- B2B Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <img 
+            src="b2b.jpg" 
+            alt="B2B Fleet EV Charging Safety" 
+            class="b2b-hero-img" 
+            loading="lazy"
+          />
         </div>
-        <p class="mt-3 mb-4">
-          <em>Act now to enjoy free shipping on every order—no minimum purchase required.</em>
-        </p>
-        <div class="text-center">
-          <a href="contact.html" class="btn btn-glow px-4 py-2">
-            Talk to Our B2B Team
-          </a>
+        <!-- B2B Text -->
+        <div class="col-lg-6">
+          <h2 class="b2b-title text-center text-white">B2B Partnerships &amp; Bulk Ordering</h2>
+          <p class="b2b-subtitle">
+            Looking to protect multiple EV cables or supply your business clients with a safer charging solution?
+            Our <strong>no minimum purchase</strong> policy and <strong>free postage &amp; packing</strong> introductory
+            offer make bulk orders both flexible and cost-effective.
+          </p>
+          <p>
+            Glow Cable Guard’s high-visibility wrap helps organisations of all sizes reduce liabilities 
+            and maintain a safer environment for employees, customers, and visitors. 
+            We offer lengths from 1m to 7m starting at <strong>£9.99</strong>, 
+            and we’re here to support your EV safety goals at scale.
+          </p>
+          <div class="text-center mt-4">
+            <a href="contact.html" class="btn btn-glow px-4 py-2">
+              Talk to Our B2B Team
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
   <!-- End B2B Section -->
 
-  <!-- FOOTER (Black BG) -->
+  <!-- FOOTER -->
   <footer class="bg-black text-white py-4" style="background-color: black !important; color:white !important;">
     <div class="container text-center">
       <p class="mb-0">
@@ -446,6 +425,7 @@
       </div>
     </div>
   </footer>
+
   <!-- Cookie Acceptance Notification -->
   <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; padding: 15px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif;">
     <span style="font-size: 1rem;">
@@ -456,6 +436,56 @@
       Accept
     </button>
   </div>
+
+  <!-- ============== MODAL for Length Selection ============== -->
+  <div 
+    class="modal fade" 
+    id="lengthModal" 
+    tabindex="-1" 
+    aria-labelledby="lengthModalLabel" 
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lengthModalLabel">Select Your Cable Length</h5>
+          <button 
+            type="button" 
+            class="btn-close" 
+            data-bs-dismiss="modal" 
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-3">
+            Please select the required cable length (in meters). 
+            Pricing varies by length.
+          </p>
+          <select id="lengthModalSelect" class="form-select">
+            <option value="">-- Choose Length --</option>
+            <option value="1">1m @ £9.99</option>
+            <option value="2">2m @ £14.99</option>
+            <option value="3">3m @ £19.99</option>
+            <option value="4">4m @ £24.99</option>
+            <option value="5">5m @ £29.99</option>
+            <option value="6">6m @ £34.99</option>
+            <option value="7">7m @ £39.99</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button 
+            type="button" 
+            class="btn btn-glow" 
+            onclick="goToCheckout()"
+          >
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============== End Modal ============== -->
+
   <!-- Bootstrap Bundle JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -463,15 +493,36 @@
     crossorigin="anonymous"
   ></script>
 
+  <!-- Stripe Link Selection Script -->
   <script>
-    // Function to hide the cookie banner and save consent
+    // Map each length to the correct Stripe link
+    const stripeLinks = {
+      1: "https://buy.stripe.com/7sIeXBfK61jD7e0144",
+      2: "https://buy.stripe.com/8wM5n1btQ2nH1TGdQR",
+      3: "https://buy.stripe.com/9AQ6r5btQ3rL1TG5km",
+      4: "https://buy.stripe.com/3csaHlfK60fz2XKeUX",
+      5: "https://buy.stripe.com/eVabLp55sd2laqc5ko",
+      6: "https://buy.stripe.com/28o6r5dBYfat2XK4gl",
+      7: "https://buy.stripe.com/5kAg1F1Tg6DX0PC9AG"
+    };
+
+    function goToCheckout() {
+      const lengthSelected = document.getElementById("lengthModalSelect").value;
+      if (!lengthSelected) {
+        alert("Please select a cable length before proceeding to checkout!");
+        return;
+      }
+      // Redirect to the appropriate Stripe link
+      window.location.href = stripeLinks[lengthSelected];
+    }
+  </script>
+
+  <script>
+    // Cookie consent
     function acceptCookies() {
       document.getElementById('cookie-banner').style.display = 'none';
-      // Save consent in localStorage so the banner does not reappear
       localStorage.setItem('cookieConsent', 'accepted');
     }
-    
-    // On page load, check for consent and hide the banner if already accepted
     window.onload = function() {
       if (localStorage.getItem('cookieConsent') === 'accepted') {
         document.getElementById('cookie-banner').style.display = 'none';
@@ -481,7 +532,7 @@
     // Update Year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Optional: subtle 3D tilt using vanilla JS for the tilt card
+    // Subtle 3D tilt on main product image
     const tiltCard = document.querySelector('.tilt-card');
     if (tiltCard) {
       tiltCard.addEventListener('mousemove', (e) => {
@@ -491,7 +542,6 @@
         const midX = rect.width / 2;
         const midY = rect.height / 2;
         
-        // Tilt values
         const rotationY = ((x - midX) / midX) * 10; 
         const rotationX = ((y - midY) / midY) * -10; 
         
@@ -502,13 +552,12 @@
         tiltCard.style.transform = 'rotateY(0) rotateX(0)';
       });
     }
-  </script>
-  <script>
+
+    // Smooth scroll to anchor if URL has a hash
     window.addEventListener('load', function() {
       if (window.location.hash) {
         var targetElement = document.querySelector(window.location.hash);
         if (targetElement) {
-          // Use a slight delay if necessary:
           setTimeout(function() {
             targetElement.scrollIntoView({ behavior: 'smooth' });
           }, 100);
@@ -516,6 +565,5 @@
       }
     });
   </script>
-  
 </body>
 </html>
