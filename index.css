@@ -106,3 +106,22 @@ header { background-color: black !important; }
     margin-bottom: 1.5rem;
   }
 }
+
+
+.uniform-images img {
+  width: 100%;          /* Ensures the image is responsive */
+  aspect-ratio: 16/16;   /* Forces 16:9 ratio on large devices */
+  object-fit: cover;    /* Crop the image, no distortion */
+  display: block;
+}
+
+/* 
+   Media Query for smaller devices:
+   Let’s force them to squares for this example. 
+   (You can remove or set a different ratio if you prefer.)
+*/
+@media (max-width: 576px) {
+  .uniform-images img {
+    aspect-ratio: 1/1; /* squares on extra-small screens */
+  }
+}
