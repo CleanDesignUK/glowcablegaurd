@@ -12,20 +12,29 @@
     rel="stylesheet"
   />
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-        crossorigin="anonymous">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+  >
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  >
+  <!-- SweetAlert2 CSS (optional, for styling) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+  >
   <!-- Custom Contact Styles -->
   <meta property="og:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview.jpg">
   <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview.jpg">
-<link rel="icon" type="image/jpeg" href="glow-cable-guard-logo-50x50.jpg">
-<meta property="og:url" content="https://glowcableguard.co.uk/contact.html">
- 
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://glowcableguard.co.uk/glow-cable-guard-product-preview.jpg">
+  <link rel="icon" type="image/jpeg" href="glow-cable-guard-logo-50x50.jpg">
+  <meta property="og:url" content="https://glowcableguard.co.uk/contact.html">
 </head>
 <body>
   <!-- NAVBAR -->
@@ -48,7 +57,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="features.html">Features</a>
@@ -57,10 +66,10 @@
             <a class="nav-link" href="preorder.html">Buy Now</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="preorder.html#b2b-sales"> B2B </a>
+            <a class="nav-link" href="preorder.html#b2b-sales">B2B</a>
           </li>
         </ul>
       </div>
@@ -177,9 +186,6 @@
             <h3>Get in Touch</h3>
             <p><strong>Email:</strong> <a href="mailto:admin@glowcableguard.co.uk">admin@glowcableguard.co.uk</a></p>
             <p><strong>Phone:</strong> 07703783253</p>
-           
-            <!-- Social Media Links using Bootstrap Icons -->
-       
           </div>
           <!-- FAQs Section -->
           <div class="faqs mt-5">
@@ -187,11 +193,23 @@
             <div class="accordion" id="faqAccordion">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button 
+                    class="accordion-button" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#collapseOne" 
+                    aria-expanded="true" 
+                    aria-controls="collapseOne"
+                  >
                     What is Glow Cable Guard?
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div 
+                  id="collapseOne" 
+                  class="accordion-collapse collapse show" 
+                  aria-labelledby="headingOne" 
+                  data-bs-parent="#faqAccordion"
+                >
                   <div class="accordion-body">
                     Glow Cable Guard is a product designed to make EV charging cables highly visible and safe.
                   </div>
@@ -199,28 +217,29 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button 
+                    class="accordion-button collapsed" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#collapseTwo" 
+                    aria-expanded="false" 
+                    aria-controls="collapseTwo"
+                  >
                     How does it work?
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div 
+                  id="collapseTwo" 
+                  class="accordion-collapse collapse" 
+                  aria-labelledby="headingTwo" 
+                  data-bs-parent="#faqAccordion"
+                >
                   <div class="accordion-body">
                     The product uses glow-in-the-dark and UV reflective technology to enhance cable visibility in various conditions. For best results, the product needs natural or UV light to charge and work effectively.
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How do I order?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    You can buy your Glow Cable Guard through our website by clicking the buy now button on the home page.
-                  </div>
-                </div>
-              </div>
+              <!-- Add more FAQs if needed -->
             </div>
           </div>
           <!-- End FAQs Section -->
@@ -228,6 +247,100 @@
       </div>
     </div>
   </section>
+
+  <!-- NEW SECTION: Versatile Usage (Alternative Wording) -->
+  <section class="versatile-usage-alt">
+    <div class="container py-5">
+      <!-- Section Title & Intro Text -->
+      <h2 class="section-title text-center mb-4">Multipurpose Applications Beyond EV Charging</h2>
+      <p class="section-text text-center mx-auto" style="max-width: 800px;">
+        Glow Cable Guard transcends electric vehicles. With its innovative <strong>luminous</strong> and <strong>UV-reflective</strong> properties, your cables remain clearly visible in low-light conditions, drastically reducing the risk of accidents. Whether you’re embarking on an outdoor adventure or managing a busy workspace, enjoy enhanced safety and efficiency.
+      </p>
+
+      <!-- Cards Row -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5">
+        <!-- Card 1: Camping & Outdoor Adventures -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-tree-fill icon-style mb-3"></i>
+              <h5 class="card-title">Camping &amp; Outdoor Adventures</h5>
+              <p class="card-text">
+                Illuminate your campsite and trails to ensure a safe, hazard-free experience during nighttime outings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Residential & Garden -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-house-door-fill icon-style mb-3"></i>
+              <h5 class="card-title">Residential &amp; Garden</h5>
+              <p class="card-text">
+                Secure outdoor cables and garden fixtures with enhanced visibility to prevent tangles and ensure safety.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Pathways & Public Areas -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-exclamation-triangle-fill icon-style mb-3"></i>
+              <h5 class="card-title">Pathways &amp; Public Areas</h5>
+              <p class="card-text">
+                Clearly mark cables that cross walkways to help pedestrians navigate safely.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Garages & Workshops -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-tools icon-style mb-3"></i>
+              <h5 class="card-title">Garages &amp; Workshops</h5>
+              <p class="card-text">
+                Keep chargers, power tools, and extension cords visible even in dim settings to boost productivity and safety.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Public Events & Gatherings -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-bricks icon-style mb-3"></i>
+              <h5 class="card-title">Public Events &amp; Gatherings</h5>
+              <p class="card-text">
+                Enhance safety at events by marking cables used in lighting and sound setups with a brilliant glow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Festivals & Performances -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow card-hover text-center">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-music-note-beamed icon-style mb-3"></i>
+              <h5 class="card-title">Festivals &amp; Performances</h5>
+              <p class="card-text">
+                Manage stage cables and AV equipment effortlessly with added visibility under low-light conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   
   <!-- FOOTER -->
   <footer class="bg-black text-white py-4">
@@ -241,38 +354,71 @@
       </div>
     </div>
   </footer>
+
   <!-- Cookie Acceptance Notification -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; padding: 15px; text-align: center; z-index: 9999; font-family: 'Open Sans', sans-serif;">
-  <span style="font-size: 1rem;">
-    We use cookies to improve your experience. By continuing, you accept our 
-    <a href="cookie-policy.html" style="color: #28a745; text-decoration: underline;">Cookie Policy</a>.
-  </span>
-  <button onclick="acceptCookies()" style="margin-left: 15px; background: #28a745; border: none; padding: 10px 20px; font-size: 1rem; color: #fff; border-radius: 5px; cursor: pointer;">
-    Accept
-  </button>
-</div>
+  <div 
+    id="cookie-banner" 
+    style="
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      background: #000; 
+      color: #fff; 
+      padding: 15px; 
+      text-align: center; 
+      z-index: 9999; 
+      font-family: 'Open Sans', sans-serif;
+    "
+  >
+    <span style="font-size: 1rem;">
+      We use cookies to improve your experience. By continuing, you accept our 
+      <a href="cookie-policy.html" style="color: #28a745; text-decoration: underline;">
+        Cookie Policy
+      </a>.
+    </span>
+    <button 
+      onclick="acceptCookies()" 
+      style="
+        margin-left: 15px; 
+        background: #28a745; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        color: #fff; 
+        border-radius: 5px; 
+        cursor: pointer;
+      "
+    >
+      Accept
+    </button>
+  </div>
 
-<script>
-  // Function to hide the cookie banner and save the consent
-  function acceptCookies() {
-    document.getElementById('cookie-banner').style.display = 'none';
-    // Save consent in localStorage so the banner does not reappear
-    localStorage.setItem('cookieConsent', 'accepted');
-  }
-  
-  // On page load, check for consent and hide the banner if already accepted
-  window.onload = function() {
-    if (localStorage.getItem('cookieConsent') === 'accepted') {
+  <script>
+    // Function to hide the cookie banner and save the consent
+    function acceptCookies() {
       document.getElementById('cookie-banner').style.display = 'none';
+      // Save consent in localStorage so the banner does not reappear
+      localStorage.setItem('cookieConsent', 'accepted');
     }
-  };
-</script>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-          crossorigin="anonymous">
+    
+    // On page load, check for consent and hide the banner if already accepted
+    window.onload = function() {
+      if (localStorage.getItem('cookieConsent') === 'accepted') {
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
+    };
   </script>
+
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"
+  ></script>
+  
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -298,14 +444,33 @@
           });
   
           if (response.ok) {
-            alert('Thank you for your message! We will get back to you shortly.');
+            // Show SweetAlert success popup
+            Swal.fire({
+              icon: 'success',
+              title: 'Thank you!',
+              text: 'Your message has been sent successfully. We will get back to you shortly.',
+              confirmButtonColor: '#28a745'
+            });
+            // Reset the form
             form.reset();
             form.classList.remove('was-validated');
           } else {
-            alert('Something went wrong. Please try again later.');
+            // Show SweetAlert error popup
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Something went wrong. Please try again later.',
+              confirmButtonColor: '#28a745'
+            });
           }
         } catch (error) {
-          alert('An error occurred. Please check your connection and try again.');
+          // Show SweetAlert error popup
+          Swal.fire({
+            icon: 'error',
+            title: 'Network Error',
+            text: 'An error occurred. Please check your connection and try again.',
+            confirmButtonColor: '#28a745'
+          });
         }
       });
     });
@@ -313,7 +478,116 @@
     // Update year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  
- 
+
 </body>
 </html>
+
+<style>
+  /* General Overrides for Contact Page */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+
+  /* Ensure Navbar is Black */
+  .navbar.bg-black {
+    background-color: #000 !important;
+  }
+
+  /* Hero Section Text Overrides */
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsiveness for hero */
+  @media (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    .hero-section p {
+      font-size: 1rem;
+    }
+  }
+
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Button Glow Styling */
+  .btn-glow {
+    background-color: #28a745;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .btn-glow:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+  /* Contact Details Styling */
+  .contact-details h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .contact-details a {
+    color: #28a745;
+    text-decoration: none;
+  }
+
+  .contact-details a:hover {
+    color: #218838;
+    text-decoration: underline;
+  }
+
+  /* FAQs Styling */
+  .faqs h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-button {
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+  }
+
+  .accordion-body {
+    background-color: #fff;
+    color: #555;
+  }
+
+  /* Footer Overrides */
+  footer.bg-black {
+    background-color: #000 !important;
+  }
+</style>

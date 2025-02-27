@@ -110,3 +110,44 @@
     footer.bg-black {
       background-color: #000 !important;
     }
+
+
+    .versatile-usage-alt {
+     
+      padding: 4rem 0;
+      border-top: 2px solid #e0e0e0;
+    }
+    .versatile-usage-alt .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    .versatile-usage-alt .section-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2.5rem;
+    }
+    .versatile-usage-alt .card {
+      background: #fff;
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .versatile-usage-alt .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .versatile-usage-alt .card .icon-style {
+      font-size: 3rem;
+      color: #28a745;
+    }
+    .versatile-usage-alt .card-title {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #2c3e50;
+    }
+    .versatile-usage-alt .card-text {
+      font-size: 1rem;
+      color: #666;
+    }

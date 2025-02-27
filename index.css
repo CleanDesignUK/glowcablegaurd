@@ -165,3 +165,60 @@ header { background-color: black !important; }
     margin-top: 0.5rem;
   }
   
+
+/* =========================
+   SEE IT IN ACTION SECTION STYLES
+   ========================== */
+   #see-it-in-action {
+
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  #see-it-in-action .section-title {
+  
+   
+    
+    margin-bottom: 1rem;
+  }
+  
+  #see-it-in-action .section-text {
+  
+   
+  
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  #see-it-in-action .action-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  #see-it-in-action .action-buttons a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #see-it-in-action .action-buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #see-it-in-action .custom-live-btn {
+    background-color: #0f0f0f;
+    color: #fff;
+    border: none;
+  }
+  
+  #see-it-in-action .custom-order-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+  }
+  

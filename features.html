@@ -62,10 +62,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link " href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="features.html">Features</a>
+            <a class="nav-link active" href="features.html">Features</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="preorder.html">Buy Now</a>
@@ -221,7 +221,7 @@
 
 
 <!-- NEW SECTION: Versatile Usage (High-Level Styled, 6 Cards) -->
-<section class="versatile-usage">
+<section class="versatile-usage" id="versatile-usage">
   <div class="container py-5">
     <!-- Section Title & Intro Text -->
     <h2 class="section-title text-center mb-4">Versatile Usage Beyond EV Charging</h2>
@@ -483,6 +483,28 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     };
   </script>
+<script>
+  window.addEventListener('load', function() {
+    // Check if there's a hash in the URL
+    if (window.location.hash) {
+      // Give the browser a moment to finish rendering
+      setTimeout(function() {
+        const id = window.location.hash.substring(1);
+        const target = document.getElementById(id);
+        if (target) {
+          // Adjust the offset (e.g., height of your fixed navbar)
+          const headerOffset = 70; 
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  });
+</script>
 
   <!-- Bootstrap JS and dependencies -->
   <script 
