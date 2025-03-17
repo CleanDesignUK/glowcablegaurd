@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block non-essential directories or files (adjust the paths as needed)
+Disallow: /non-essential-directory/
+Disallow: /temp/
+Disallow: /old-assets/
+
+# Reference to your sitemap
+Sitemap: https://glowcableguard.co.uk/sitemap.xml
